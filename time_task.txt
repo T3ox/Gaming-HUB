@@ -1,0 +1,12 @@
+TIME TASK
+1h  08/11/2023
+    https://github.com/T3ox/Gaming-HUB/compare/2a94058762b9016ec1da921900cf6ed3b5412865...6ffb2c8f4a1839cd8efa2669c1941d54c26d2a93
+
+1h 08/11/2023
+    https://github.com/T3ox/Gaming-HUB/compare/6ffb2c8f4a1839cd8efa2669c1941d54c26d2a93...709241143a2f8bbaaeba5893266f8c7f3cdcad72
+
+2h 10/11/2023
+    https://github.com/T3ox/Gaming-HUB/compare/68e0345fd755c9f8667d8d5dbe2f83d604174776...1b4196e79cdd9e5dcd21f34cdf1d15dfee558b8a
+
+3h 11/11/2023
+    https://github.com/T3ox/Gaming-HUB/compare/1b4196e79cdd9e5dcd21f34cdf1d15dfee558b8a...0b70455736f660863026631bc07095752eab52af
