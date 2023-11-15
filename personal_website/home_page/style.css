@@ -62,7 +62,7 @@ body {
 }
 
 .description-column {
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     width: 60%;
     height: fit-content;
@@ -80,6 +80,6 @@ body {
     align-items: center;
 }
 
-.img-column img{
+.img-column img {
     height: 50vh;
 }
