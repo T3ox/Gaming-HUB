@@ -15,8 +15,6 @@ whatsApp.addEventListener('click', openWhatsApp);
 
 function openWhatsApp() {
     const telephoneNumber = "+393349447729"
-
     const link = "https://wa.me/" + telephoneNumber
-
     window.open(link, "_blank")
 }
