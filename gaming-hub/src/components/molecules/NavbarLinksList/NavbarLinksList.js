@@ -1,18 +1,17 @@
 import React from 'react';
-import {links} from "../../../links";
 import NavbarLink from "../../atoms/NavbarLink/NavbarLink";
+import {routes} from "../../../routes";
 const NavbarLinksList = () => {
     return (
-            <ul className="navbar flex-container justify-right">
-                {
-                    links.map(link => {
-                        return (
-                            <NavbarLink key={link.id} link={link} />
-                        );
-                    })
-                }
-            </ul>
+        <ul className="navbar flex-container justify-right">
+            {routes.map(link => {
+                console.log(link.path)
+                if (link.path === "/" || link.path === "/*") return null;
+                return <NavbarLink key={link.id} link={link} />;
+            })}
+        </ul>
     );
 };
+;
 
 export default NavbarLinksList;

@@ -6,8 +6,8 @@ const Banner = () => {
 
     return (
         <div>
-            <NavbarLinksList />
-            <img src={bannerURL} alt="banner" className="banner"/>
+            <NavbarLinksList navbarClass="navbar"/>
+            <img src={bannerURL} alt="banner" className="banner" />
         </div>
     );
 }

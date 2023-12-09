@@ -1,17 +1,9 @@
-import NavbarLinksList from './components/molecules/NavbarLinksList/NavbarLinksList';
-import bannerURL from "./components/organisms/Banner/hub_esterno_hq.jpeg";
-import Banner from "./components/organisms/Banner/Banner";
-import TitleVetrina from "./components/atoms/TitleVetrina/TitleVetrina";
-import Vetrina from "./components/organisms/Vetrina/Vetrina";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./routes";
 
 function App() {
-
-    return (
-        <div className="App">
-            <Banner />
-            <Vetrina type="menu"/>
-        </div>
-    );
+    let element = useRoutes(routes);
+    return element;
 }
 
 export default App;
