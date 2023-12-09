@@ -7,6 +7,7 @@ const Home = () => {
         <div>
             <Banner />
             <Vetrina type="menu"/>
+            <Vetrina type="LAN"/>
         </div>
     );
 };

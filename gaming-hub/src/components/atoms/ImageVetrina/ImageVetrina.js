@@ -1,10 +1,13 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const ImageVetrina = ({ href, imgSrc, alt }) => {
     return (
-        <a href={href}>
-            <img src={imgSrc} alt={alt} />
-        </a>
+        <div className="img-container flex-container justify-center align-center">
+            <Link to={href}>
+                <img src={imgSrc} alt={alt} />
+            </Link>
+        </div>
     )
 }
 

@@ -8,10 +8,7 @@
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
@@ -22,8 +19,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
 
 :root {
   --menuBanner: #8AA940;
@@ -78,7 +73,7 @@ ul {
 .navbar {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
-  padding: 0% 2%;
+  padding: 0 2%;
   /*border-bottom: 1px solid rgba(124, 124, 124, 0.7);*/
   overflow: hidden;
   position: sticky;
@@ -101,7 +96,7 @@ ul {
 
 .vetrina {
   background-color: var(--menuBanner);
-  padding: 56px 0 56px 0;
+  padding: 56px 0 101px 0;
   font-size: 1.2em;
 }
 
@@ -165,13 +160,13 @@ ul {
   gap: 25px;
 }
 
-/*#LAN-container .text-container h2 {
+#LAN-container .text-container h2 {
   font-size: 2.5rem;
-}*/
+}
 
 #LAN-container .img-container {
   position: relative;
-  max-width: 450px;
+  max-width: 500px;
   flex-grow: 1;
   flex-shrink: 0;
   overflow: hidden;
@@ -179,7 +174,7 @@ ul {
 
 #LAN-container .img-container img {
   width: 90%;
-  height: 90%;
+  height: auto;
 }
 
 .recensioni {

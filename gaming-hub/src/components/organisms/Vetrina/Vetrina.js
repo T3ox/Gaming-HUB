@@ -7,7 +7,7 @@ import img from "./season4.jpg"
 const Vetrina = ({type}) => {
     return (
         <section className="vetrina">
-            <article className="flex-container justify-center align-center container">
+            <article className="flex-container justify-center align-center container" id={`${type}-container`}>
                 <div className="text-container" id={`${type}-description`} >
                     <div className="text flex-container">
                         <TitleVetrina text="Menu" />
@@ -17,8 +17,8 @@ const Vetrina = ({type}) => {
                         Ab autem blanditiis, delectus dolorem excepturi, ipsum iste minima,
                         molestias nisi odit quaerat quo." />
                     </div>
-                    <ImageVetrina imgSrc={img} alt="Menu" href="" />
                 </div>
+                <ImageVetrina imgSrc={img} alt="Menu" href="/menu"/>
             </article>
         </section>
     )
