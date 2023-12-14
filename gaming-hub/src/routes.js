@@ -27,7 +27,7 @@ export const routes = [
     },
     {
         id: 4,
-        text: "Home",
+        text: "Indicazioni",
         path: "/indicazioni",
         element: <Indicazioni />
     },
