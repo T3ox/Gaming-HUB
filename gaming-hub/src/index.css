@@ -27,14 +27,19 @@ code {
   --hoverNavbar: #0096ff;
 }
 
-a {
+/*a {
   text-decoration: none;
   color: black;
+
+  const styles: React.CSSProperties = {
+    textDecoration: "none",
+  }
+
 }
 
 ul {
   list-style: none;
-}
+}*/
 
 .container {
   margin: auto;
@@ -71,11 +76,10 @@ ul {
   overflow: hidden;
 }
 
-.navbar {
+/*.navbar {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
   padding: 0 2%;
-  /*border-bottom: 1px solid rgba(124, 124, 124, 0.7);*/
   overflow: hidden;
   position: sticky;
   z-index: 1;
@@ -89,7 +93,7 @@ ul {
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
-}
+}*/
 
 .navbar a:hover {
   color: rgb(0, 150, 255);

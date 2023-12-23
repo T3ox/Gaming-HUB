@@ -1,7 +1,4 @@
-import React from 'react';
-import Banner from "../../organisms/Banner/Banner";
-import Vetrina from "../../organisms/Vetrina/Vetrina";
-import Review from "../../organisms/Review/Review";
+import Banner from "../../organisms/Header/Header";
 
 const imgMenu = require("../../../images/season4.jpg");
 const imgLAN = require("../../../images/sala_LAN2.jpg");
@@ -28,9 +25,6 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            <Vetrina {...VetrinaContent.menu} />
-            <Vetrina {...VetrinaContent.LAN}/>
-            <Review/>
         </div>
     );
 };
