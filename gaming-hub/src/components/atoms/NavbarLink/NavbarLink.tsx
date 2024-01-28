@@ -15,11 +15,19 @@ const linkStyles: React.CSSProperties = {
 }
 
 const NavbarLink: React.FC<Props> = ({id, path, text}) => {
-    return (
-        <li  key={id} style={listStyles}>
-            <Link to={path} style={linkStyles}>{text}</Link>
-        </li>
-    );
+    if (id === "5") {
+        return (
+            <li key={id} style={listStyles}>
+                <a href="https://wa.me/+393349447729" style={linkStyles} target="_blank" rel="noopener noreferrer">{text}</a>
+            </li>
+        );
+    } else {
+        return (
+            <li key={id} style={listStyles}>
+                <Link to={path} style={linkStyles}>{text}</Link>
+            </li>
+        );
+    }
 }
 
 export default NavbarLink;

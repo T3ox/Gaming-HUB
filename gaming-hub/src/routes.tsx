@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from "./components/pages/Home/Home";
 import Menu from "./components/pages/Menu";
-import About from "./components/pages/About";
+import About from "./components/pages/Chi Siamo/About";
 import Indicazioni from "./components/pages/Indicazioni";
 import Prenota from "./components/pages/Prenota";
 import ErrorPage from "./components/pages/ErrorPage";

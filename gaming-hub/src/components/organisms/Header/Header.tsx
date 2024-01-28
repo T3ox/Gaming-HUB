@@ -2,21 +2,18 @@ import React from 'react';
 import NavbarLinksList from '../../molecules/NavbarLinksList/NavbarLinksList';
 
 const BannerImgStyles: React.CSSProperties = {
-    position: "relative",
-    maxHeight: "100vh",
-    top: "-78px",
     width: "100vw",
-    filter: "brightness(50%)",
+    height: "100vh",
     overflow: "hidden",
+    filter: "brightness(50%)",
 }
 
 const Header = () => {
     const bannerURL: string = require("../../../images/hub_esterno_hq.jpeg");
-    
     return (
         <div>
             <NavbarLinksList/>
-            <img src={bannerURL} alt="banner" style={BannerImgStyles} />
+            <img src={bannerURL} alt="banner" style={BannerImgStyles}/>
         </div>
     );
 }
