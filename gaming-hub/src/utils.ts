@@ -1,5 +1,6 @@
 const imgMenu = require("./images/season4.jpg");
 const imgLAN = require("./images/sala_LAN2.jpg");
+const imgAbout = require("./images/about.jpg");
 
 export const VetrinaContent = {
     menu: {
@@ -23,6 +24,6 @@ export const VetrinaContent = {
         type: "menu",
         text: "I Due Pilastri",
         description: "Hamburger di Qualità e tanto Divertimento",
-        image: imgLAN,
+        image: imgAbout,
     },
 };

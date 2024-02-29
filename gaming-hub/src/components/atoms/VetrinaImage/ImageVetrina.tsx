@@ -4,15 +4,15 @@ import Props from "./types";
 
 const styles: React.CSSProperties = {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     maxWidth: "500px",
     overflow: "hidden",
 };
 
 const imgStyle: React.CSSProperties = {
-    width: "90%",
-    height: "90%",
+    width: "100%",
+    height: "100%",
 };
 const ImageVetrina: React.FC<Props> = ({ href, imgSrc, alt }) => {
     return (
