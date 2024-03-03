@@ -1,7 +1,7 @@
 import React from "react";
 import ImageVetrina from "../../atoms/VetrinaImage/ImageVetrina";
-import Props from "./types";
 import VetrinaText from "../../molecules/VetrinaText/VetrinaText";
+import Props from "./types";
 
 const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
     const vetrinaStyle: React.CSSProperties = {
@@ -9,20 +9,23 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
         padding: "56px 0",
     };
 
-    const containerStyle: React.CSSProperties = {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "auto",
-        gap: "50px",
+    const dynamicStyle: React.CSSProperties = {
         flexDirection: type === "menu" ? "row" : "row-reverse",
-    };
+        backgroundColor: type === "menu" ? "#8AA940" : "#7E1DC5",
+        width: "100%",
+      };
 
     return (
-        <div style={vetrinaStyle}>
-            <div style={containerStyle}>
-                <VetrinaText text={text} description={description} />
-                <ImageVetrina imgSrc={image} alt="Menu" href="/menu" />
+        <div style={dynamicStyle} >
+            <div className="container" >
+                <div className="row">
+                    <div className="col-12 col-md-6">
+                        <VetrinaText text={text} description={description} />
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <ImageVetrina imgSrc={image} alt="Menu" href="/menu" />
+                    </div>
+                </div>
             </div>
         </div>
     );

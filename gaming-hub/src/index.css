@@ -45,10 +45,10 @@ ul {
   list-style: none;
 }*/
 
-.container {
+/*.container {
   margin: auto;
   width: calc(100% - 48px);
-}
+}*/
 
 .flex-container {
   display: flex;

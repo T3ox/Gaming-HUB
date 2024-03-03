@@ -1,6 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRoutes } from "react-router-dom";
 import { routes } from "./routes";
-import NavbarLink from "./components/atoms/NavbarLink/NavbarLink";
+
 
 function App() {
     return useRoutes(routes);
