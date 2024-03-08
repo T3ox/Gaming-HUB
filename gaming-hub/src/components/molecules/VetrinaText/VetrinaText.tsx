@@ -1,21 +1,14 @@
 import React from 'react';
-import TitleVetrina from "../../atoms/VetrinaTitle/TitleVetrina";
-import DescriptionVetrina from "../../atoms/VetrinaDescription/DescriptionVetrina";
-import {Props} from "./types";
-import {text} from "stream/consumers";
+import "./styles.scss";
+import { Props } from "./types";
 
-const textContainerStyle: React.CSSProperties = {
-    width: "45%",
-    display: "flex",
-    flexDirection: "column",
-}
-const MyComponent: React.FC<Props> = ({text, description}) => {
+const VetrinaTextContainer: React.FC<Props> = ({text, description}) => {
     return (
-        <div style={textContainerStyle}>
-            <TitleVetrina text={text}/>
-            <DescriptionVetrina description={description}/>
+        <div className='vetrina-container'>
+            <h2 className='py-2'>{text}</h2>
+            <p>{description}</p>
         </div>
     );
 };
 
-export default MyComponent;
+export default VetrinaTextContainer;
