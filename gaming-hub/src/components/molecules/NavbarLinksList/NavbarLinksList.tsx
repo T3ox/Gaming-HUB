@@ -1,5 +1,5 @@
-import React from 'react';
-import { routes } from "../../../routes";
+//import { routes } from "../../../routes";
+import React from "react";
 import NavbarLink from "../../atoms/NavbarLink/NavbarLink";
 
 const styles: React.CSSProperties = {
@@ -13,19 +13,17 @@ const styles: React.CSSProperties = {
     justifyContent: "flex-end",
     listStyle: "none",
     width: "100%",
-}
+};
 
 const NavbarLinksList = () => {
     return (
         <ul style={styles}>
-            {routes.map(link => {
-                console.log(link.path)
-                if (link.path === "/" || link.path === "/*") return null;
-                return <NavbarLink {...link} />;
-            })}
+            <NavbarLink id="1" path="/menu" text="Menu" />
+            <NavbarLink id="2" path="/chiSiamo" text="Chi Siamo" />
+            <NavbarLink id="3" path="/indicazioni" text="Indicazioni" />
+            <NavbarLink id="4" path="/prenota" text="Prenota" />
         </ul>
     );
 };
-
 
 export default NavbarLinksList;

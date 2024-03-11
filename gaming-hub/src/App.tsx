@@ -1,10 +1,17 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { useRoutes } from "react-router-dom";
-import { routes } from "./routes";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/pages/Home";
+import Menu from "./components/pages/Menu";
 
-
-function App() {
-    return useRoutes(routes);
-}
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/menu" element={<Menu />} />
+            </Routes>
+        </BrowserRouter>
+    );
+};
 
 export default App;
