@@ -1,16 +1,17 @@
 import { useState } from "react";
+import "./styles.scss";
 
 const Navbar = () => {
     const [showOffcanvas, setShowOffcanvas] = useState(false);
 
     return (
-        <nav className="navbar bg-body-tertiary fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand fs-4" href="/">
                     Home
                 </a>
                 <button
-                    className="navbar-toggler"
+                    className="navbar-toggler shadow-none border-0"
                     type="button"
                     onClick={() => setShowOffcanvas(true)}
                     data-bs-toggle="offcanvas"
@@ -20,14 +21,14 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon" />
                 </button>
                 <div
-                    className={`offcanvas offcanvas-end ${
+                    className={`sidebar offcanvas offcanvas-end ${
                         showOffcanvas ? "show " : ""
                     }`}
                     tabIndex={-1}
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
                 >
-                    <div className="offcanvas-header">
+                    <div className="offcanvas-header text-white border-bottom">
                         <h5
                             className="offcanvas-title"
                             id="offcanvasNavbarLabel"
@@ -37,7 +38,7 @@ const Navbar = () => {
                         <button
                             type="button"
                             onClick={() => setShowOffcanvas(false)}
-                            className="btn-close"
+                            className="btn-close btn-close-white shadow-none"
                             data-bs-dismiss="offcanvas"
                             aria-label="Close"
                         ></button>
@@ -54,40 +55,24 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">
-                                    Link
+                                <a className="nav-link" href="/menu">
+                                    Menu
                                 </a>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a
-                                    className="nav-link dropdown-toggle"
-                                    href="/"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    Dropdown
+                            <li className="nav-item">
+                                <a className="nav-link" href="/about">
+                                    Chi Siamo
                                 </a>
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <a className="dropdown-item" href="/">
-                                            Action
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="/">
-                                            Another action
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="/">
-                                            Something else here
-                                        </a>
-                                    </li>
-                                </ul>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/indicazioni">
+                                    Indicazioni
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/prenota">
+                                    Prenota
+                                </a>
                             </li>
                         </ul>
                     </div>
