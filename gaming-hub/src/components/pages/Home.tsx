@@ -1,4 +1,4 @@
-import Banner from "../organisms/Header/Header";
+import Header from "../organisms/Header/Header";
 import Vetrina from "../organisms/Vetrina/Vetrina";
 
 //const imgMenu = require("../../../images/about.jpg") as string;
@@ -21,7 +21,7 @@ const db = {
 const Home = () => {
     return (
         <div>
-            <Banner />
+            <Header />
             <Vetrina type="menu" {...db.menu} />
             <Vetrina type="lan" {...db.lan} />
         </div>
