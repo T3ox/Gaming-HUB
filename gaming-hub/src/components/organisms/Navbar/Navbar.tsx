@@ -3,6 +3,7 @@ import "./styles.scss";
 
 const Navbar = () => {
     const [showOffcanvas, setShowOffcanvas] = useState(false);
+    const whatsappUrl = `https://wa.me/+393519735045`;
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
@@ -63,7 +64,12 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li className="nav-item mx-2">
-                                <a className="nav-link" href="/prenota">
+                                <a
+                                    className="nav-link"
+                                    href={whatsappUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Prenota
                                 </a>
                             </li>
