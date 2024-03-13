@@ -22,54 +22,47 @@ const Navbar = () => {
                 </button>
                 <div
                     className={`sidebar offcanvas offcanvas-end ${
-                        showOffcanvas ? "show " : ""
+                        showOffcanvas ? "show overflow-hidden" : "hiding"
                     }`}
                     tabIndex={-1}
                     id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel"
                 >
-                    <div className="offcanvas-header text-white border-bottom">
-                        <h5
+                    <div className="offcanvas-header text-white">
+                        {/*<h5
                             className="offcanvas-title"
                             id="offcanvasNavbarLabel"
                         >
                             Offcanvas
-                        </h5>
+                        </h5>*/}
                         <button
                             type="button"
                             onClick={() => setShowOffcanvas(false)}
                             className="btn-close btn-close-white shadow-none"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"
-                        ></button>
+                        />
                     </div>
-                    <div className="offcanvas-body">
-                        <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <div className="offcanvas-body d-flex">
+                        <ul className="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a
-                                    className="nav-link active"
-                                    aria-current="page"
-                                    href="/"
-                                >
+                                <a className="nav-link" href="/">
                                     Home
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item mx-2">
                                 <a className="nav-link" href="/menu">
                                     Menu
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item mx-2">
                                 <a className="nav-link" href="/about">
                                     Chi Siamo
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item mx-2">
                                 <a className="nav-link" href="/indicazioni">
                                     Indicazioni
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item mx-2">
                                 <a className="nav-link" href="/prenota">
                                     Prenota
                                 </a>
