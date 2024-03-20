@@ -6,7 +6,7 @@ const Navbar = () => {
     const whatsappUrl = `https://wa.me/+393519735045`;
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
             <div className="container-fluid">
                 <a className="navbar-brand fs-4" href="/">
                     Home
@@ -29,12 +29,6 @@ const Navbar = () => {
                     id="offcanvasNavbar"
                 >
                     <div className="offcanvas-header text-white">
-                        {/*<h5
-                            className="offcanvas-title"
-                            id="offcanvasNavbarLabel"
-                        >
-                            Offcanvas
-                        </h5>*/}
                         <button
                             type="button"
                             onClick={() => setShowOffcanvas(false)}
@@ -43,11 +37,6 @@ const Navbar = () => {
                     </div>
                     <div className="offcanvas-body d-flex">
                         <ul className="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3">
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">
-                                    Home
-                                </a>
-                            </li>
                             <li className="nav-item mx-2">
                                 <a className="nav-link" href="/menu">
                                     Menu

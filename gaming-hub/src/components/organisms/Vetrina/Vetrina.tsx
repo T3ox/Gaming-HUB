@@ -47,7 +47,10 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
 
     return (
         <div style={dynamicStyle}>
-            <div className="container" style={{ maxWidth: "90% !important" }}>
+            <div
+                className="container container-vetrina"
+                style={{ maxWidth: "90% !important" }}
+            >
                 <div className="row" style={dynamicDirection}>
                     <div
                         ref={textRef}
