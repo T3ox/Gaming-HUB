@@ -1,0 +1,33 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 8svh;
+
+    @media (max-width: 991px) {
+        .sidebar {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+
+            .offcanvas-body {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .offcanvas {
+        width: 100% !important;
+
+        .offcanvas-body {
+            align-items: center;
+
+            @media (max-width: 991px) {
+                ul {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

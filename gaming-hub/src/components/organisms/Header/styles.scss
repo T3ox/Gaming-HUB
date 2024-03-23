@@ -1,0 +1,14 @@
+.banner-img {
+    /*height: 100dvh;
+    width: 100%;*/
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+    filter: brightness(50%);
+
+    @media (max-width: 870px) {
+        width: 100dvh;
+        max-height: 60svh !important;
+        object-fit: cover;
+    }
+}

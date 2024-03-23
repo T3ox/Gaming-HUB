@@ -1,0 +1,33 @@
+.container-vetrina {
+    max-width: 90% !important;
+
+    .row {
+        height: 55svh;
+        align-content: center;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column-reverse !important;
+        }
+
+        .vetrina-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            padding: 20px;
+        }
+
+        .text-container {
+            margin-right: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+
+            &.fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

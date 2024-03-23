@@ -1,3 +1,12 @@
+Collegamenti utili per realizzare il nostro sito:
+
+- Informazioni RIOT Play Club:  https://www.leagueoflegends.com/it-it/news/esports/riot-play-club-si-parte/
+  
+- Competitor con un sito ottimale da raggiungere per lato cucina:  https://www.remanzohamburgeria.it/
+  
+- Utility per React:  https://www.w3schools.com/react/react_getstarted.asp
+                      https://it.legacy.reactjs.org/tutorial/tutorial.html
+                      https://www.html.it/guide/react-la-guida/
 # Gaming-HUB
 Spazio di progettazione per "HUB - Good Food & Gaming Zone", Sala LAN e Hamburgeria.
 
@@ -9,7 +18,6 @@ Spazio di progettazione per "HUB - Good Food & Gaming Zone", Sala LAN e Hamburge
 
 ## Gruppo di Lavoro:
 - Matteo Vattimo (Lead programmer e IT developer)
-- Leonardo Alloni (Project leader, client mediator e second programmer)
 
 ### Precisazioni:
 Lo sviluppo del Sito deve girare attorno alle richeiste di Giovanni e aggiornato secondo il suo parere. Il Rispetto di chi fornisce a noi il lavoro è essenziale e riconoscere lui come figura primaria di idea è il minimo. Nel caso però sia concessa carta bianca il rapporto dei due lavoratori diventa pressochè importante ed entrambi si devono impegnare a rispettare ambiente di lavoro e esterno.
