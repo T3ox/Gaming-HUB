@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 Collegamenti utili per realizzare il nostro sito:
 
 - Informazioni RIOT Play Club:  https://www.leagueoflegends.com/it-it/news/esports/riot-play-club-si-parte/
