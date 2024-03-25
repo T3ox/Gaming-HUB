@@ -1,13 +1,18 @@
-const portal = require("../../../images/portal") as string;
-//const portal = require("../../../images/portal") as string;
+import "./styles.scss";
+import Props from "./type";
+const portal = require("../../../images/portal.png") as string;
+const panino = require("../../../images/Buddy_nobg.png") as string;
 
-const Hamburger = () => {
+const HamburgerComponent: React.FC<Props> = ({ name }) => {
     return (
-        <div>
-            <img src={portal} alt="" />
-            <img src={portal} alt="" />
+        <div className="panino-container d-flex flex-column align-items-center">
+            <div className="panino-shower">
+                <img src={portal} alt="" />
+                <img src={panino} alt="" />
+            </div>
+            <span className="mb-4">{name}</span>
         </div>
     );
 };
 
-export default Hamburger;
+export default HamburgerComponent;

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Gaming-HUB/static/css/main.9500e220.css",
+    "main.js": "/Gaming-HUB/static/js/main.1706ce7f.js",
+    "static/js/453.eeeb2488.chunk.js": "/Gaming-HUB/static/js/453.eeeb2488.chunk.js",
+    "static/media/Buddy_nobg.png": "/Gaming-HUB/static/media/Buddy_nobg.b804cafc23ea2e10c4e2.png",
+    "static/media/marmoBackground.png": "/Gaming-HUB/static/media/marmoBackground.3539cce3b03305b32ab8.png",
+    "static/media/sala_LAN2.jpg": "/Gaming-HUB/static/media/sala_LAN2.901054e89812a60ca649.jpg",
+    "static/media/hub_esterno_hq.jpeg": "/Gaming-HUB/static/media/hub_esterno_hq.b6c1e3aa3db04bb12cab.jpeg",
+    "static/media/bg.png": "/Gaming-HUB/static/media/bg.8659c0a8d012534a728a.png",
+    "index.html": "/Gaming-HUB/index.html",
+    "main.9500e220.css.map": "/Gaming-HUB/static/css/main.9500e220.css.map",
+    "main.1706ce7f.js.map": "/Gaming-HUB/static/js/main.1706ce7f.js.map",
+    "453.eeeb2488.chunk.js.map": "/Gaming-HUB/static/js/453.eeeb2488.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9500e220.css",
+    "static/js/main.1706ce7f.js"
+  ]
+}
