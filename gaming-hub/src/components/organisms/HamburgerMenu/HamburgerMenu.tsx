@@ -1,4 +1,5 @@
 import HamburgerComponent from "../../molecules/Hamburger/Hamburger";
+import "./styles.scss";
 import Hamburger from "./type";
 
 const menu: Hamburger[] = [
