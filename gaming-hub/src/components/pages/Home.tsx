@@ -1,14 +1,13 @@
 import Header from "../organisms/Header/Header";
 import Vetrina from "../organisms/Vetrina/Vetrina";
-
-//const imgMenu = require("../../../images/about.jpg") as string;
+const imgMenu = require("../../images/about.jpg") as string;
 const imgLAN = require("../../images/sala_LAN2.jpg") as string;
 
 const db = {
     menu: {
         text: "Menu",
         description: "Good Food & Gaming Zone",
-        image: "",
+        image: imgMenu,
     },
     lan: {
         text: "La Sala LAN",

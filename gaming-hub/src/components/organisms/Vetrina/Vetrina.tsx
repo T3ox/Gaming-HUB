@@ -51,14 +51,14 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
                 className="container container-vetrina"
                 style={{ maxWidth: "90% !important" }}
             >
-                <div className="row" style={dynamicDirection}>
+                <div className="row my-md-5" style={dynamicDirection}>
                     <div
                         ref={textRef}
                         className="col-12 col-md-6 text-container vetrina-container"
                     >
                         <VetrinaText text={text} description={description} />
                     </div>
-                    <div className="col-12 col-md-6 vetrina-container mb-1">
+                    <div className="col-12 col-md-6 image-container vetrina-container">
                         <ImageVetrina imgSrc={image} alt="Menu" href="/menu" />
                     </div>
                 </div>

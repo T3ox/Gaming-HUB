@@ -5,11 +5,9 @@ import Props from "./types";
 
 const VetrinaImage: React.FC<Props> = ({ href, imgSrc, alt }) => {
     return (
-        <div className="img-container">
-            <Link to={href}>
-                <img src={imgSrc} alt={alt} className="img-menu" />
-            </Link>
-        </div>
+        <Link to={href} id="link-menu">
+            <img src={imgSrc} alt={alt} id="img-menu" />
+        </Link>
     );
 };
 

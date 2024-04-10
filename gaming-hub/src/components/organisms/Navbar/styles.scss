@@ -3,16 +3,31 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    /*z-index: 1030;*/
     height: 8svh;
 
     @media (max-width: 991px) {
-        .sidebar {
+        /*.sidebar {
             background-color: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(10px);
+            height: 100svh;
 
             .offcanvas-body {
                 text-transform: uppercase;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+            }
+        }*/
+
+        .sidebar {
+            background-color: rgba(0, 0, 0, 0.6);
+            .offcanvas-body {
+                position: fixed;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow-y: scroll;
+                z-index: 100000;
             }
         }
     }

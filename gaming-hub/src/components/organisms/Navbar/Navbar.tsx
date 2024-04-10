@@ -25,7 +25,6 @@ const Navbar = () => {
                     className={`sidebar offcanvas offcanvas-end ${
                         showOffcanvas ? "show overflow-hidden" : "hiding"
                     }`}
-                    tabIndex={-1}
                     id="offcanvasNavbar"
                 >
                     <div className="offcanvas-header text-white">
