@@ -1,12 +1,16 @@
 #link-menu {
     display: inline;
+    width: 500px;
+
+    @media (max-width: 768px) {
+        width: 100vw;
+    }
 
     #img-menu {
-        height: 500px;
-
-        @media (max-width: 768px) {
-            width: 100%;
-            height: auto;
-        }
+        width: 90%;
+        height: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

@@ -54,7 +54,7 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
                 <div className="row my-md-5" style={dynamicDirection}>
                     <div
                         ref={textRef}
-                        className="col-12 col-md-6 text-container vetrina-container"
+                        className="col-12 col-md-6 text-container vetrina-container justify-content-end"
                     >
                         <VetrinaText text={text} description={description} />
                     </div>
