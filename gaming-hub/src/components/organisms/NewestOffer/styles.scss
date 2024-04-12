@@ -13,7 +13,6 @@
 
     .content {
         position: relative;
-        /*margin-top: 72px;*/
         max-width: 1350px;
 
         .offer-img {
@@ -35,12 +34,12 @@
             margin: auto 0;
             font: 400 1.5rem Inter, sans-serif;
 
-            :first-child {
+            span {
                 font-size: 4rem;
             }
-            :nth-child(2) {
-                font-size: 4rem;
-                font-weight: 700;
+
+            #offer-name {
+                font-weight: bold;
             }
         }
     }

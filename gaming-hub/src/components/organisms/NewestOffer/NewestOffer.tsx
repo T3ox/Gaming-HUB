@@ -18,7 +18,7 @@ const NewestOffer = () => {
                         </div>
                         <div className="offer-description flex-column d-flex w-50 text-center position-relative">
                             <span>SPECIAL</span>
-                            <span>BUDDY BURGER</span>
+                            <span id="offer-name">BUDDY BURGER</span>
                             100g di carne bovina
                             <br />
                             razza Blonde D’Aquitaine,
