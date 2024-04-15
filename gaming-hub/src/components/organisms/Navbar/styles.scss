@@ -1,22 +1,13 @@
+@import "../../../utils/variables";
+
 .navbar {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    height: 8svh;
+    height: $navbar-height;
 
     @media (max-width: 991px) {
-        /*.sidebar {
-            background-color: rgba(0, 0, 0, 0.6);
-            height: 100svh;
-
-            .offcanvas-body {
-                text-transform: uppercase;
-                -webkit-backdrop-filter: blur(10px);
-                backdrop-filter: blur(10px);
-            }
-        }*/
-
         .sidebar {
             background-color: rgba(0, 0, 0, 0.6);
             .offcanvas-body {

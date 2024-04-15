@@ -6,11 +6,6 @@ import "./styles.scss";
 import Props from "./types";
 
 const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
-    const dynamicStyle: React.CSSProperties = {
-        backgroundColor: type === "menu" ? "#8AA940" : "#7E1DC5",
-        width: "100%",
-    };
-
     const dynamicDirection: React.CSSProperties = {
         flexDirection: type === "menu" ? "row" : "row-reverse",
     };
@@ -46,11 +41,8 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
     }, []);
 
     return (
-        <div style={dynamicStyle}>
-            <div
-                className="container container-vetrina"
-                style={{ maxWidth: "90% !important" }}
-            >
+        <div className="dynamic-container w-100" id={type}>
+            <div className="container container-vetrina">
                 <div className="row my-md-5" style={dynamicDirection}>
                     <div
                         ref={textRef}

@@ -1,3 +1,5 @@
+@import "../../../utils/variables";
+
 .container-vetrina {
     max-width: 90% !important;
 
@@ -38,4 +40,12 @@
             }
         }
     }
+}
+
+#menu {
+    background-color: $vetrina-menu;
+}
+
+#lan {
+    background-color: $vetrina-lan;
 }

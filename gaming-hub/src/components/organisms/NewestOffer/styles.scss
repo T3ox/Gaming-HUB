@@ -1,45 +1,83 @@
+@import "../../../utils/variables";
+
 .banner {
-    height: 75svh;
-    padding: 80px 60px 0;
+    background-image: url("../../../images/bg.png");
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 70svh;
+    width: 100%;
+    margin-top: $navbar-height;
 
-    .background {
-        position: absolute;
-        inset: 0;
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-        height: 75%;
-    }
+    .container {
+        max-width: 90% !important;
+        height: fit-content;
 
-    .content {
-        position: relative;
-        max-width: 1350px;
+        .row {
+            align-items: center;
+            width: fit-content;
 
-        .offer-img {
-            line-height: normal;
-
-            img {
-                aspect-ratio: 0.8;
-                object-position: center;
-                flex-grow: 1;
-                width: 70%;
+            #image {
+                justify-content: flex-end;
             }
-        }
-
-        .offer-description {
-            line-height: normal;
-            color: #fff;
-            text-align: center;
-            align-self: stretch;
-            margin: auto 0;
-            font: 400 1.5rem Inter, sans-serif;
-
-            span {
-                font-size: 4rem;
+            #text {
+                justify-content: flex-start;
             }
 
-            #offer-name {
-                font-weight: bold;
+            .offer-container {
+                line-height: normal;
+                display: flex;
+                justify-content: center;
+                padding-left: 50px;
+                padding-right: 50px;
+
+                .offer-img {
+                    width: 500px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .offer-description {
+                color: white;
+                font-size: 16px;
+                text-align: center;
+                line-height: 1.5;
+
+                :nth-child(1) {
+                    font-size: 24px;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                :nth-child(2) {
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    display: block;
+                }
+
+                /*display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: auto 0;
+                font: 400 1.5rem Inter, sans-serif;
+
+                span {
+                    font-size: 4rem;
+                }
+
+                #offer-name {
+                    font-weight: bold;
+                }*/
             }
         }
     }

@@ -4,37 +4,36 @@ const newOfferBG = require("../../../images/bg.png") as string;
 
 const NewestOffer = () => {
     return (
-        <>
-            <div className="d-flex flex-column overflow-hidden justify-center align-items-center w-100 banner">
-                <img
-                    src={newOfferBG}
-                    alt=""
-                    className="background"
-                />
-                <div className="content w-100">
-                    <div className="d-flex gap-3">
-                        <div className="offer-img d-flex flex-column w-50 ms-0">
+        <div className="banner d-flex align-items-center">
+            <div className="container d-flex justify-content-center">
+                <div className="row">
+                    <div className="col-6 offer-container" id="image">
+                        <div className="offer-img">
                             <img alt="" srcSet={newOfferImg} />
                         </div>
-                        <div className="offer-description flex-column d-flex w-50 text-center position-relative">
+                    </div>
+                    <div className="col-6 offer-container" id="text">
+                        <div className="offer-description text-wrap">
                             <span>SPECIAL</span>
                             <span id="offer-name">BUDDY BURGER</span>
-                            100g di carne bovina
-                            <br />
-                            razza Blonde D’Aquitaine,
-                            <br />
-                            Panelle di Zia Gina con
-                            <br />
-                            farina di ceci, prezzemolo e limone
-                            <br />
-                            prosciutto cotto, battuto <br />
-                            di pomodoro e insalata gentile
-                            <br />
+                            <span>
+                                100g di carne bovina
+                                <br />
+                                razza Blonde D’Aquitaine,
+                                <br />
+                                Panelle di Zia Gina con
+                                <br />
+                                farina di ceci, prezzemolo e limone
+                                <br />
+                                prosciutto cotto, battuto <br />
+                                di pomodoro e insalata gentile
+                                <br />
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
