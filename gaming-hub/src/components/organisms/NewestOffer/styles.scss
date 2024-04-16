@@ -1,5 +1,9 @@
 @import "../../../utils/variables";
 
+$fs-xxl: 4rem;
+$fs-xl: 3.5rem;
+$fs-l: 3rem;
+
 .banner {
     background-image: url("../../../images/bg.png");
     background-blend-mode: multiply;
@@ -7,8 +11,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    height: 70svh;
     width: 100%;
+    max-height: 70svh;
     margin-top: $navbar-height;
 
     .container {
@@ -22,16 +26,16 @@
             #image {
                 justify-content: flex-end;
             }
-            #text {
+            /*#text {
                 justify-content: flex-start;
-            }
+            }*/
 
             .offer-container {
                 line-height: normal;
                 display: flex;
                 justify-content: center;
-                padding-left: 50px;
-                padding-right: 50px;
+                /*padding-left: 20px;
+                padding-right: 20px;*/
 
                 .offer-img {
                     width: 500px;
@@ -44,40 +48,50 @@
 
             .offer-description {
                 color: white;
-                font-size: 16px;
+                font: 400 Inter, sans-serif;
+                font-size: 3.5vw;
                 text-align: center;
-                line-height: 1.5;
-
-                :nth-child(1) {
-                    font-size: 24px;
-                    display: block;
-                    margin-bottom: 10px;
-                }
 
                 :nth-child(2) {
-                    font-size: 20px;
                     font-weight: bold;
-                    display: block;
-                    margin-bottom: 10px;
+                }
+
+                :nth-child(3) {
+                    font-size: calc(3.5vw / 2);
                 }
 
                 span {
                     display: block;
+                    line-height: 1.4;
                 }
 
-                /*display: flex;
-                flex-direction: column;
-                text-align: center;
-                margin: auto 0;
-                font: 400 1.5rem Inter, sans-serif;
+                @media (max-width: 767px) {
+                    font: 400 Inter, sans-serif;
+                    font-size: 5.8vw;
+                    text-align: center;
 
-                span {
-                    font-size: 4rem;
+                    :nth-child(3) {
+                        font-size: calc(5.8vw / 2);
+                    }
                 }
 
-                #offer-name {
-                    font-weight: bold;
-                }*/
+                @media (max-width: 1200px) {
+                    font-size: 5.3vw;
+                    text-align: center;
+
+                    :nth-child(3) {
+                        font-size: calc(5.3vw / 2);
+                    }
+                }
+
+                @media (max-width: 1300px) {
+                    font-size: 5vw;
+                    text-align: center;
+
+                    :nth-child(3) {
+                        font-size: calc(5vw / 2);
+                    }
+                }
             }
         }
     }

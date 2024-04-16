@@ -6,13 +6,13 @@ const NewestOffer = () => {
     return (
         <div className="banner d-flex align-items-center">
             <div className="container d-flex justify-content-center">
-                <div className="row">
-                    <div className="col-6 offer-container" id="image">
+                <div className="row my-4">
+                    <div className="col-5 col-md-6 offer-container" id="image">
                         <div className="offer-img">
                             <img alt="" srcSet={newOfferImg} />
                         </div>
                     </div>
-                    <div className="col-6 offer-container" id="text">
+                    <div className="col-7 col-md-6 offer-container" id="text">
                         <div className="offer-description text-wrap">
                             <span>SPECIAL</span>
                             <span id="offer-name">BUDDY BURGER</span>
