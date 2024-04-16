@@ -6,7 +6,7 @@ const Navbar = () => {
     const whatsappUrl = `https://wa.me/+393519735045`;
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <nav className="navbar navbar-expand-md navbar-dark bg-black fixed-top">
             <div className="container-fluid">
                 <a className="navbar-brand fs-4" href="/">
                     Home

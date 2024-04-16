@@ -1,40 +1,77 @@
+$item-4k: 500px;
+$item-xxl: 350px;
+$item-xl: 280px;
+$item-l: 230px;
+$item-md: 200px;
+$item-sm: 35vw;
+
 .panino-container {
+    height: 90%;
     transition: transform 0.4s ease;
+    overflow: hidden;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 
     .panino-shower {
         position: relative;
-        width: 300px;
-        height: 300px;
+        height: $item-4k;
+        width: $item-4k;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             position: absolute;
             height: 100%;
-            top: 0;
+        }
 
-            &:nth-child(2) {
-                top: 35px;
-                left: 50%;
-                transform: translateX(-50%);
-                height: 80%;
-            }
+        #hamburger {
+            height: 70%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width: 2200px) {
+            height: $item-xxl;
+            width: $item-xxl;
         }
 
         @media (max-width: 1460px) {
-            width: 250px;
-            height: 250px;
+            height: $item-xl;
+            width: $item-xl;
         }
 
         @media (max-width: 992px) {
-            width: 200px;
-            height: 200px;
+            height: $item-l;
+            width: $item-l;
+        }
+
+        @media (max-width: 576px) {
+            height: $item-md;
+            width: $item-md;
+        }
+
+        @media (max-width: 456px) {
+            height: $item-sm;
+            width: $item-sm;
         }
     }
 
     span {
-        font: bold 1.5rem sans-serif;
+        font: bold 1.75rem sans-serif;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 5px;
+
+        @media (max-width: 1440px) {
+            font: bold 1.5rem sans-serif;
+        }
+
+        @media (max-width: 370px) {
+            font: bold 1rem sans-serif;
+        }
     }
 }

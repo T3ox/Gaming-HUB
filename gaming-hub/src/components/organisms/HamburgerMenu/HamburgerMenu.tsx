@@ -8,7 +8,7 @@ const HamburgerMenu = () => {
             <div className="row">
                 {menu.map((hamburger, index) => (
                     <div
-                        className=" col-12 col-sm-6 col-md-4 col-xl-3 hamburger-container"
+                        className=" col-6 col-md-4 col-xl-3 hamburger-container"
                         key={index}
                     >
                         <HamburgerComponent

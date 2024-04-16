@@ -7,7 +7,7 @@
     left: 0;
     height: $navbar-height;
 
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
         .sidebar {
             background-color: rgba(0, 0, 0, 0.6);
             .offcanvas-body {
@@ -28,7 +28,7 @@
         .offcanvas-body {
             align-items: center;
 
-            @media (max-width: 991px) {
+            @media (max-width: 767px) {
                 ul {
                     justify-content: center;
                 }

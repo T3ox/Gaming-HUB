@@ -1,8 +1,9 @@
 @import "../../../utils/variables";
 
-$fs-xxl: 4rem;
-$fs-xl: 3.5rem;
-$fs-l: 3rem;
+$fs-xxl: 4vw;
+$fs-md: 7vw;
+$fs-sm: 8.7vw;
+$fs-xs: 9.7vw;
 
 .banner {
     background-image: url("../../../images/bg.png");
@@ -12,87 +13,116 @@ $fs-l: 3rem;
     background-repeat: no-repeat;
     overflow: hidden;
     width: 100%;
-    max-height: 70svh;
     margin-top: $navbar-height;
 
     .container {
         max-width: 90% !important;
         height: fit-content;
+        padding: 0;
 
         .row {
             align-items: center;
-            width: fit-content;
-
-            #image {
-                justify-content: flex-end;
-            }
-            /*#text {
-                justify-content: flex-start;
-            }*/
+            width: 100%;
 
             .offer-container {
                 line-height: normal;
                 display: flex;
                 justify-content: center;
-                /*padding-left: 20px;
-                padding-right: 20px;*/
+                padding: 0;
 
                 .offer-img {
-                    width: 500px;
+                    width: 60%;
+
+                    @media (max-width: 768px) {
+                        max-height: 250px;
+                    }
 
                     img {
                         width: 100%;
                     }
                 }
+
+                .offer-description {
+                    color: white;
+                    width: 100%;
+                    font: 400 Inter, sans-serif;
+                    text-align: center;
+
+                    :nth-child(2) {
+                        font-weight: bold;
+                    }
+
+                    :nth-child(3) {
+                        width: 85%;
+                        margin: auto;
+                        font-size: calc($fs-xxl / 2);
+                    }
+
+                    span {
+                        display: block;
+                        line-height: 1.4;
+                    }
+
+                    @media (min-width: 768px) {
+                        font-size: $fs-xxl;
+                        text-align: center;
+
+                        :nth-child(3) {
+                            font-size: calc($fs-xxl / 2);
+                        }
+                    }
+
+                    //Bootstrap Breakpoint medium
+                    @media (max-width: 767px) {
+                        font-size: $fs-md;
+                        text-align: center;
+
+                        :nth-child(3) {
+                            font-size: calc($fs-md / 2);
+                        }
+                    }
+
+                    //Bootstrap Breakpoint small
+                    @media (max-width: 576px) {
+                        font-size: $fs-sm;
+                        text-align: center;
+
+                        :nth-child(3) {
+                            font-size: calc($fs-sm / 2.5);
+                        }
+                    }
+
+                    //Dispositivo mobile grande
+                    @media (max-width: 425px) {
+                        font-size: $fs-xs;
+                        text-align: center;
+
+                        :nth-child(3) {
+                            font-size: calc($fs-xs / 2.1);
+                        }
+                    }
+                }
             }
 
-            .offer-description {
-                color: white;
-                font: 400 Inter, sans-serif;
-                font-size: 3.5vw;
-                text-align: center;
+            @media (max-width: 767px) {
+                flex-direction: column;
 
-                :nth-child(2) {
-                    font-weight: bold;
+                #image {
+                    width: 50%;
                 }
 
-                :nth-child(3) {
-                    font-size: calc(3.5vw / 2);
-                }
-
-                span {
-                    display: block;
-                    line-height: 1.4;
-                }
-
-                @media (max-width: 767px) {
-                    font: 400 Inter, sans-serif;
-                    font-size: 5.8vw;
-                    text-align: center;
-
-                    :nth-child(3) {
-                        font-size: calc(5.8vw / 2);
-                    }
-                }
-
-                @media (max-width: 1200px) {
-                    font-size: 5.3vw;
-                    text-align: center;
-
-                    :nth-child(3) {
-                        font-size: calc(5.3vw / 2);
-                    }
-                }
-
-                @media (max-width: 1300px) {
-                    font-size: 5vw;
-                    text-align: center;
-
-                    :nth-child(3) {
-                        font-size: calc(5vw / 2);
-                    }
+                #text {
+                    width: 90%;
                 }
             }
         }
+    }
+
+    @media (max-width: 767px) {
+        max-height: 65svh;
+    }
+
+    @media (min-width: 768px) {
+        height: 60svh;
     }
 }

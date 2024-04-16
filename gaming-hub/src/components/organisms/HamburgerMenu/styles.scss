@@ -2,6 +2,9 @@
     max-width: 95% !important;
 
     .hamburger-container {
-        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
     }
 }

@@ -8,7 +8,7 @@ const HamburgerComponent: React.FC<Props> = ({ name, img }) => {
         <div className="panino-container d-flex flex-column align-items-center">
             <div className="panino-shower">
                 <img src={portal} alt="" />
-                <img src={img} alt="" />
+                <img src={img} alt="" id="hamburger" />
             </div>
             <span>{name}</span>
         </div>
