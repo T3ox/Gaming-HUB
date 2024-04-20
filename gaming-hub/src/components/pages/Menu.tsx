@@ -6,7 +6,7 @@ import "./styles.scss";
 const Menu = () => {
     return (
         <>
-            <div className="header d-flex">
+            <div className="header d-flex overflow-hidden">
                 <Navbar />
                 <NewestOffer />
             </div>

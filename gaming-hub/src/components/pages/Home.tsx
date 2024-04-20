@@ -2,6 +2,7 @@ import Header from "../organisms/Header/Header";
 import Vetrina from "../organisms/Vetrina/Vetrina";
 const imgMenu = require("../../images/about.jpg") as string;
 const imgLAN = require("../../images/sala_LAN2.jpg") as string;
+const bannerURL: string = require("../../images/hub_esterno_hq.jpeg");
 
 const db = {
     menu: {
@@ -24,11 +25,12 @@ const db = {
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Header />
             <Vetrina type="menu" {...db.menu} />
             <Vetrina type="lan" {...db.lan} />
-        </div>
+            <footer></footer>
+        </>
     );
 };
 
