@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-md navbar-dark bg-black">
+            <nav className="navbar navbar-expand-md navbar-dark bg-black px-5">
                 <a className="navbar-brand fs-4" href="/">
                     Home
                 </a>
