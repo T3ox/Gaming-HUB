@@ -1,6 +1,7 @@
 #link-menu {
     display: inline;
-    width: 500px;
+    width: 600px;
+    height: auto;
 
     @media (max-width: 768px) {
         width: 100vw;

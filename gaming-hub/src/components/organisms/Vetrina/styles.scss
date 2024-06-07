@@ -6,11 +6,13 @@
     .row {
         align-items: center;
         padding: 20px 0 70px 0;
+        flex-direction: inherit;
 
         .vetrina-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             color: black;
             height: 90%;
         }
@@ -48,4 +50,24 @@
 
 #lan {
     background-color: $vetrina-lan;
+
+    .container-vetrina {
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+#story {
+    background-color: $vetrina-story;
+}
+
+#story2 {
+    background-color: $vetrina-story2;
+
+    .container-vetrina {
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
 }

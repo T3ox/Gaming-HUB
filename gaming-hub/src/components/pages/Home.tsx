@@ -26,9 +26,9 @@ const db = {
 const Home = () => {
     return (
         <>
-            <Header />
-            <Vetrina type="menu" {...db.menu} />
-            <Vetrina type="lan" {...db.lan} />
+            <Header height="100svh" image={bannerURL} />
+            <Vetrina type="menu" {...db.menu} href="/menu" />
+            <Vetrina type="lan" {...db.lan} href="" />
             <footer></footer>
         </>
     );

@@ -1,13 +1,15 @@
 import Navbar from "../Navbar/Navbar";
 import "./styles.scss";
+import { Props } from "./types";
 
-const bannerURL: string = require("../../../images/hub_esterno_hq.jpeg");
-
-const Header = () => {
+const Header: React.FC<Props> = ({ height, image }) => {
     return (
-        <div className="Header d-flex">
+        <div
+            className="aboutus-header d-flex"
+            style={{ height: `${height}`, backgroundImage: `url("${image}")` }}
+        >
             <Navbar />
-            <img src={bannerURL} alt="banner" className="banner-img" />
+            {/*<img src={image} alt="banner" className="banner-img" />*/}
         </div>
     );
 };
