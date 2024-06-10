@@ -5,15 +5,32 @@
 }*/
 
 .aboutus-header {
+    position: relative;
+    height: 100%;
+    width: 100%;
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    filter: brightness(50%);
+    filter: brightness(100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: inherit;
+        background-position: inherit;
+        background-size: inherit;
+        background-repeat: inherit;
+        filter: brightness(50%);
+    }
 
     @media (max-width: 870px) {
-        width: 100dvh;
+        //width: 100dvh;
         max-height: 60svh !important;
         object-fit: cover;
     }
