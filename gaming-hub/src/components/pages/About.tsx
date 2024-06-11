@@ -8,7 +8,7 @@ const About = () => {
 
     return (
         <>
-            <Header height="60svh" image={aboutUsBannerURL} />
+            <Header height="60svh" heightLg="60svh" image={aboutUsBannerURL} />
             <Vetrina
                 type="story"
                 text="Panini"

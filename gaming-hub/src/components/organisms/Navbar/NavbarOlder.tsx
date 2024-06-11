@@ -1,12 +1,10 @@
 import { useState } from "react";
-import "./styles.scss";
 
 const NavbarOlder = () => {
     const [showOffcanvas, setShowOffcanvas] = useState(false);
     const whatsappUrl = `https://wa.me/+393519735045`;
-
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <nav className="navbar navbar-expand-md navbar-dark bg-black fixed-top">
             <div className="container-fluid">
                 <a className="navbar-brand fs-4" href="/">
                     Home
@@ -23,11 +21,11 @@ const NavbarOlder = () => {
                 </button>
                 <div
                     className={`sidebar offcanvas offcanvas-end ${
-                        showOffcanvas ? "show overflow-hidden" : "hiding"
+                        showOffcanvas ? "show" : ""
                     }`}
                     id="offcanvasNavbar"
                 >
-                    <div className="offcanvas-header text-white">
+                    <div className="offcanvas-header text-white ">
                         <button
                             type="button"
                             onClick={() => setShowOffcanvas(false)}

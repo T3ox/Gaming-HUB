@@ -1,23 +1,15 @@
 import Navbar from "../Navbar/Navbar";
-//import NavbarOlder from "../Navbar/NavbarOlder";
 import "./styles.scss";
 import { Props } from "./types";
 
 //TODO: FIX THIS SHIT PLEASE
 
-const Header: React.FC<Props> = ({ height, image }) => {
+const Header: React.FC<Props> = ({ height, heightLg, image }) => {
     return (
-        <>
-            <div
-                className="aboutus-header d-flex"
-                style={{
-                    height: `${height}`,
-                    backgroundImage: `url("${image}")`,
-                }}
-            >
-                <Navbar />
-            </div>
-        </>
+        <div className="header d-flex">
+            <Navbar />
+            <img src={image} alt="banner" className="banner-img" />
+        </div>
     );
 };
 

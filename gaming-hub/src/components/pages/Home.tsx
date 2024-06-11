@@ -26,7 +26,7 @@ const db = {
 const Home = () => {
     return (
         <>
-            <Header height="100svh" image={bannerURL} />
+            <Header height="60svh" heightLg="100svh" image={bannerURL} />
             <Vetrina type="menu" {...db.menu} href="/menu" />
             <Vetrina type="lan" {...db.lan} href="" />
             <footer></footer>

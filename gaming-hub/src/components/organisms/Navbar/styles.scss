@@ -7,11 +7,7 @@
     left: 0;
     padding: 0 calc(1.5rem * 0.5);
     height: $navbar-height-lg;
-    z-index: 1050;
-
-    ul li a {
-        color: white;
-    }
+    z-index: 1;
 
     @media (max-width: 769px) {
         height: $navbar-height-md;
@@ -34,7 +30,6 @@
 
 .offcanvas {
     width: 100% !important;
-    z-index: 1060;
     background-color: rgba(0, 0, 0, 0.6);
     .offcanvas-body {
         position: fixed;
