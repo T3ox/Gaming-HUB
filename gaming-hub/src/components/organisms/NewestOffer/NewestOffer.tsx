@@ -16,24 +16,11 @@ const NewestOffer = () => {
                         <div className="offer-description text-wrap">
                             <span>SPECIAL</span>
                             <span id="offer-name">BUDDY BURGER</span>
-                            {/*<span>
-                                100g di carne bovina
-                                <br />
-                                razza Blonde D’Aquitaine,
-                                <br />
-                                Panelle di Zia Gina con
-                                <br />
-                                farina di ceci, prezzemolo e limone
-                                <br />
-                                prosciutto cotto, battuto <br />
-                                di pomodoro e insalata gentile
-                                <br />
-                            </span>*/}
                             <span>
                                 100g di carne bovina razza Blonde D’Aquitaine,
                                 Panelle di Zia Gina con farina di ceci,
-                                prezzemolo e limone, prosciutto cotto, battuto di
-                                pomodoro e insalata gentile
+                                prezzemolo e limone, prosciutto cotto, battuto
+                                di pomodoro e insalata gentile
                             </span>
                         </div>
                     </div>

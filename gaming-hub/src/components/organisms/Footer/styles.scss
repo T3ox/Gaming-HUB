@@ -1,0 +1,22 @@
+.footer-container {
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+    font-family: serif;
+
+    .container {
+        .opening-hours {
+            text-align: center;
+
+            span {
+                font-size: 1.1rem;
+                margin: 5px 0px;
+            }
+
+            .days-column,
+            .hours-column {
+                flex-direction: column;
+            }
+        }
+    }
+}

@@ -1,12 +1,18 @@
-.banner-img {
-    width: 100%;
-    height: 100svh;
-    overflow: hidden;
-    filter: brightness(50%);
+.header {
+    height: var(--heightLg);
 
-    @media (max-width: 870px) {
-        width: 100dvh;
-        max-height: 60svh !important;
+    .banner-img {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        filter: brightness(50%);
     }
+
+    @media (max-width: 767px) {
+        height: var(--height);
+        object-fit: cover;    }
 }

@@ -1,3 +1,4 @@
+import Footer from "../organisms/Footer/Footer";
 import Header from "../organisms/Header/Header";
 import Vetrina from "../organisms/Vetrina/Vetrina";
 const imgMenu = require("../../images/about.jpg") as string;
@@ -29,7 +30,7 @@ const Home = () => {
             <Header height="60svh" heightLg="100svh" image={bannerURL} />
             <Vetrina type="menu" {...db.menu} href="/menu" />
             <Vetrina type="lan" {...db.lan} href="" />
-            <footer></footer>
+            <Footer />
         </>
     );
 };

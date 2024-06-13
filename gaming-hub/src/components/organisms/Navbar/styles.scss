@@ -1,32 +1,17 @@
 @import "../../../utils/variables";
 
 .navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
+    position: fixed;
     padding: 0 calc(1.5rem * 0.5);
     height: $navbar-height-lg;
-    z-index: 1;
+    z-index: 2;
 
     @media (max-width: 769px) {
         height: $navbar-height-md;
+        background-color: rgba(0, 0, 0, 0.75) !important;
     }
 }
-
-/*.offcanvas {
-    width: 100vw !important;
-
-    .offcanvas-body {
-        align-items: center;
-
-        @media (max-width: 767px) {
-            ul {
-                justify-content: center;
-            }
-        }
-    }
-}*/
 
 .offcanvas {
     width: 100% !important;

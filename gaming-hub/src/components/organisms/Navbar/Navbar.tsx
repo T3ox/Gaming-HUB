@@ -1,16 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles.scss";
 
 const Navbar = () => {
     const whatsappUrl = `https://wa.me/+393519735045`;
     const [show, setShow] = useState(false);
+    const handleClose = () => {
+        setShow(false);
+        document.body.style.overflow = "auto";
+    };
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleShow = () => {
+        setShow(true);
+        document.body.style.overflow = "hidden";
+    };
+
+    useEffect(() => {
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, []);
 
     return (
         <>
-            <nav className="navbar navbar-expand-md navbar-dark bg-black">
+            <nav className={`navbar navbar-expand-md navbar-dark bg-black`}>
                 <a className="navbar-brand fs-4" href="/">
                     Home
                 </a>
@@ -23,10 +35,10 @@ const Navbar = () => {
                 </button>
                 <div
                     className={`collapse navbar-collapse`}
-                    //${show ? "show overflow-hidden" : "hiding"} to enable show, kinda useless rn
+                    //${show ? "show overflow-hidden" : "hiding"} to enable show, non so usarlo
                     id="navbarNav"
                 >
-                    <ul className="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3">
+                    <ul className="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3 ">
                         <li className="nav-item mx-2">
                             <a className="nav-link" href="/menu">
                                 Menu

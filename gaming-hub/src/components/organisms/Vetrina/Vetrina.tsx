@@ -37,7 +37,7 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image, href }) => {
     }, []);
 
     return (
-        <div className="dynamic-container w-100" id={type}>
+        <div className="dynamic-container" id={type}>
             <div className="container container-vetrina">
                 <div className="row my-md-5">
                     <div
