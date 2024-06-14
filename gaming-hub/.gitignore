@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.pack
 
 # testing
 /coverage
@@ -23,3 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 
 ../.idea/
+
+# caching
+/.cache
