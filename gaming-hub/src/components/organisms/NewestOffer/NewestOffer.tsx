@@ -1,6 +1,5 @@
 import "./styles.scss";
 const newOfferImg = require("../../../images/Buddy_nobg.png") as string;
-const newOfferBG = require("../../../images/bg.png") as string;
 
 const NewestOffer = () => {
     return (
