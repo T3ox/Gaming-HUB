@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 import "./styles.scss";
 import { Props } from "./types";
 
@@ -15,7 +14,6 @@ const Header: React.FC<Props> = ({ height, heightLg, image }) => {
 
     return (
         <div className="header" style={customStyles}>
-            <Navbar />
             <img src={image} alt="banner" className="banner-img" />
         </div>
     );
