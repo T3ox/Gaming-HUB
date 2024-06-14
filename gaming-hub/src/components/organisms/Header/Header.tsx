@@ -1,13 +1,20 @@
-import Navbar from "../Navbar/Navbar";
 import "./styles.scss";
+import { Props } from "./types";
 
-const bannerURL: string = require("../../../images/hub_esterno_hq.jpeg");
+interface CustomCSSProperties extends React.CSSProperties {
+    "--height"?: string;
+    "--heightLg"?: string;
+}
 
-const Header = () => {
+const Header: React.FC<Props> = ({ height, heightLg, image }) => {
+    const customStyles: CustomCSSProperties = {
+        "--height": height,
+        "--heightLg": heightLg,
+    };
+
     return (
-        <div className="Header d-flex">
-            <Navbar />
-            <img src={bannerURL} alt="banner" className="banner-img" />
+        <div className="header" style={customStyles}>
+            <img src={image} alt="banner" className="banner-img" />
         </div>
     );
 };

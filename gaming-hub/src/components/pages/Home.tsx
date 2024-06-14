@@ -1,30 +1,35 @@
 import Header from "../organisms/Header/Header";
 import Vetrina from "../organisms/Vetrina/Vetrina";
-
-//const imgMenu = require("../../../images/about.jpg") as string;
+const imgMenu = require("../../images/about.jpg") as string;
 const imgLAN = require("../../images/sala_LAN2.jpg") as string;
+const bannerURL: string = require("../../images/hub_esterno_hq.jpeg");
 
 const db = {
     menu: {
-        text: "Menu",
-        description: "Good Food & Gaming Zone",
-        image: "",
+        text: "Esplora il nostro delizioso menu completo!",
+        description:
+            "Vieni a scoprire tutti i nostri succulenti hamburger con nomi ispirati " +
+            "al mondo del gaming e con vastissima scelta. Clicca sulla foto qui sopra per sfogliare " +
+            "il nostro menu completo e preparati a un'esperienza culinaria indimenticabile!",
+        image: imgMenu,
     },
     lan: {
         text: "La Sala LAN",
         description:
-            "Il gaming è anche uno stile di vita, infatti l’Hub non è una sala giochi, è una cosa molto diversa, dove ci si può divertire socializzando",
+            "Benvenuto da Hub: non una semplice sala LAN, ma un luogo dove il gaming diventa uno " +
+            "stile di vita. Socializza e divertiti con amici e nuove conoscenze mentre mostri " +
+            "le tue abilità su postazioni di fascia alta. Un luogo dove il divertimento è garantito.",
         image: imgLAN,
     },
 };
 
 const Home = () => {
     return (
-        <div>
-            <Header />
-            <Vetrina type="menu" {...db.menu} />
-            <Vetrina type="lan" {...db.lan} />
-        </div>
+        <>
+            <Header height="60svh" heightLg="100svh" image={bannerURL} />
+            <Vetrina type="menu" {...db.menu} href="/menu" />
+            <Vetrina type="lan" {...db.lan} href="" />
+        </>
     );
 };
 

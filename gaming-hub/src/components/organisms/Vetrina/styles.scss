@@ -1,25 +1,24 @@
+@import "../../../utils/variables";
+
 .container-vetrina {
     max-width: 90% !important;
 
     .row {
-        height: 55svh;
-        align-content: center;
-
-        @media screen and (max-width: 767px) {
-            flex-direction: column-reverse !important;
-        }
+        align-items: center;
+        padding: 20px 0 70px 0;
+        flex-direction: inherit;
 
         .vetrina-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             color: black;
-            padding: 20px;
+            height: 90%;
         }
 
         .text-container {
-            margin-right: auto;
+            align-items: center;
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 1s ease, transform 1s ease;
@@ -28,6 +27,47 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        .row {
+            flex-direction: column-reverse !important;
+
+            .image-container {
+                align-items: center;
+            }
+        }
+    }
+}
+
+#menu {
+    background-color: $vetrina-menu;
+}
+
+#lan {
+    background-color: $vetrina-lan;
+
+    .container-vetrina {
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+#story {
+    background-color: $vetrina-story;
+}
+
+#story2 {
+    background-color: $vetrina-story2;
+
+    .container-vetrina {
+        .row {
+            flex-direction: row-reverse;
         }
     }
 }

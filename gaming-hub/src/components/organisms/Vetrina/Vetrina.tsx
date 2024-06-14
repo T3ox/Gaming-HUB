@@ -5,16 +5,7 @@ import VetrinaText from "../../molecules/VetrinaText/VetrinaText";
 import "./styles.scss";
 import Props from "./types";
 
-const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
-    const dynamicStyle: React.CSSProperties = {
-        backgroundColor: type === "menu" ? "#8AA940" : "#7E1DC5",
-        width: "100%",
-    };
-
-    const dynamicDirection: React.CSSProperties = {
-        flexDirection: type === "menu" ? "row" : "row-reverse",
-    };
-
+const Vetrina: React.FC<Props> = ({ type, text, description, image, href }) => {
     const textRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -46,20 +37,17 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image }) => {
     }, []);
 
     return (
-        <div style={dynamicStyle}>
-            <div
-                className="container container-vetrina"
-                style={{ maxWidth: "90% !important" }}
-            >
-                <div className="row" style={dynamicDirection}>
+        <div className="dynamic-container" id={type}>
+            <div className="container container-vetrina">
+                <div className="row my-md-5">
                     <div
                         ref={textRef}
-                        className="col-12 col-md-6 text-container vetrina-container"
+                        className="col-12 col-md-6 text-container vetrina-container justify-content-end"
                     >
                         <VetrinaText text={text} description={description} />
                     </div>
-                    <div className="col-12 col-md-6 vetrina-container mb-1">
-                        <ImageVetrina imgSrc={image} alt="Menu" href="/menu" />
+                    <div className="col-12 col-md-6 image-container vetrina-container">
+                        <ImageVetrina imgSrc={image} alt="Menu" href={href} />
                     </div>
                 </div>
             </div>
