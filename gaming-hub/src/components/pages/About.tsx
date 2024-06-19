@@ -1,4 +1,5 @@
 import Header from "../organisms/Header/Header";
+import Overlay from "../organisms/Overlay/Overlay";
 import Vetrina from "../organisms/Vetrina/Vetrina";
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
                 image={storyImage1}
                 href=""
             />
+            <Overlay />
         </>
     );
 };
