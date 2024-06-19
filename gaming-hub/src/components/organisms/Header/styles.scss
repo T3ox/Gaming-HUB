@@ -1,3 +1,5 @@
+@import "../../../utils/variables";
+
 .header {
     height: var(--heightLg);
 
@@ -12,7 +14,7 @@
         filter: brightness(50%);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: $md) {
         height: var(--height);
         object-fit: cover;
     }

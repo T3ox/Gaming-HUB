@@ -1,3 +1,5 @@
+@import "../../../utils/variables";
+
 .background-overlay {
     background-image: url("../../../images/hub_menu.jpg");
     background-position: 69% 80%;
@@ -19,7 +21,7 @@
         z-index: -1;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         background-position: 0% 100%;
         background-size: 200%;
     }
@@ -27,14 +29,14 @@
     .overlay-column .row {
         height: 40svh;
 
-        @media (max-width: 768px) {
+        @media (max-width: $md) {
             height: 40svh;
         }
 
         .overlay-content {
             justify-content: center;
 
-            @media (max-width: 768px) {
+            @media (max-width: $md) {
                 justify-content: flex-end;
                 align-items: center;
             }

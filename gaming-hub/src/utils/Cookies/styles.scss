@@ -1,3 +1,5 @@
+@import "../../utils/variables";
+
 .cookie-notice {
     position: fixed;
     bottom: 0;
@@ -59,7 +61,7 @@
         box-shadow: 0 4px 6px -1px #977ef3, 0 2px 4px -1px #977ef3;
         transition: all 0.6s ease;
     }
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         width: 100%;
         height: 200px;
 

@@ -1,3 +1,5 @@
+@import "../../../utils/variables";
+
 $item-4k: 500px;
 $item-xxl: 350px;
 $item-xl: 280px;
@@ -39,22 +41,22 @@ $item-sm: 35vw;
             width: $item-xxl;
         }
 
-        @media (max-width: 1460px) {
+        @media (max-width: $xxl) {
             height: $item-xl;
             width: $item-xl;
         }
 
-        @media (max-width: 992px) {
+        @media (max-width: $lg) {
             height: $item-l;
             width: $item-l;
         }
 
-        @media (max-width: 576px) {
+        @media (max-width: $md) {
             height: $item-md;
             width: $item-md;
         }
 
-        @media (max-width: 456px) {
+        @media (max-width: $sm) {
             height: $item-sm;
             width: $item-sm;
         }
@@ -66,7 +68,7 @@ $item-sm: 35vw;
         text-align: center;
         padding-bottom: 5px;
 
-        @media (max-width: 1440px) {
+        @media (max-width: $xxl) {
             font: bold 1.5rem sans-serif;
         }
 

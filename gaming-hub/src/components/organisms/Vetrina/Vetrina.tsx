@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-import ImageVetrina from "../../atoms/VetrinaImage/ImageVetrina";
+import ImageVetrina from "../../atoms/VetrinaImage/VetrinaImage";
 import VetrinaText from "../../molecules/VetrinaText/VetrinaText";
 import "./styles.scss";
 import Props from "./types";

@@ -7,7 +7,7 @@
     height: $navbar-height-lg;
     z-index: 2;
 
-    @media (max-width: 769px) {
+    @media (max-width: $md) {
         height: $navbar-height-md;
         background-color: rgba(0, 0, 0, 0.75) !important;
     }

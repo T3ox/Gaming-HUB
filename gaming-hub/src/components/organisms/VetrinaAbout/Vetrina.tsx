@@ -1,7 +1,7 @@
 import React from "react";
-import ImageVetrina from "../../atoms/VetrinaImage/ImageVetrina";
-import VetrinaText from "../../molecules/VetrinaText/VetrinaText";
 import { VetrinaContent } from "../../../utils";
+import ImageVetrina from "../../atoms/VetrinaImage/VetrinaImage";
+import VetrinaText from "../../molecules/VetrinaText/VetrinaText";
 
 const AboutVetrina: React.FC = () => {
     const vetrinaStyle: React.CSSProperties = {

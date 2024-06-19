@@ -33,7 +33,7 @@ $fs-xs: 9.7vw;
                 .offer-img {
                     width: 60%;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: $md) {
                         max-height: 250px;
                     }
 
@@ -73,7 +73,7 @@ $fs-xs: 9.7vw;
                     }
 
                     //Bootstrap Breakpoint medium
-                    @media (max-width: 767px) {
+                    @media (max-width: $md) {
                         font-size: $fs-md;
                         text-align: center;
 
@@ -83,7 +83,7 @@ $fs-xs: 9.7vw;
                     }
 
                     //Bootstrap Breakpoint small
-                    @media (max-width: 576px) {
+                    @media (max-width: $sm) {
                         font-size: $fs-sm;
                         text-align: center;
 
@@ -104,7 +104,7 @@ $fs-xs: 9.7vw;
                 }
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: $md) {
                 flex-direction: column;
 
                 #image {
@@ -118,7 +118,7 @@ $fs-xs: 9.7vw;
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: $md) {
         max-height: 65svh;
         margin-top: $navbar-height-md;
     }
