@@ -21,7 +21,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <>
+        <header>
             <nav className={`navbar navbar-expand-md navbar-dark bg-black`}>
                 <a className="navbar-brand fs-4" href="/">
                     Home
@@ -114,7 +114,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </>
+        </header>
     );
 };
 

@@ -13,9 +13,14 @@ const Header: React.FC<Props> = ({ height, heightLg, image }) => {
     };
 
     return (
-        <div className="header" style={customStyles}>
-            <img src={image} alt="banner" className="banner-img" />
-        </div>
+        <header className="header" style={customStyles}>
+            <img
+                src={image}
+                alt="banner"
+                className="banner-img"
+                style={customStyles}
+            />
+        </header>
     );
 };
 

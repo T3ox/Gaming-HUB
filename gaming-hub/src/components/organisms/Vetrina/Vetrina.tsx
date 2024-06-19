@@ -37,21 +37,21 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image, href }) => {
     }, []);
 
     return (
-        <div className="dynamic-container" id={type}>
+        <section className="dynamic-container" id={type}>
             <div className="container container-vetrina">
-                <div className="row my-md-5">
+                <div className="row justify-content-center my-md-5">
                     <div
                         ref={textRef}
-                        className="col-12 col-md-6 text-container vetrina-container justify-content-end"
+                        className="col-12 col-md-5 col-lg-6 text-container vetrina-container justify-content-end"
                     >
                         <VetrinaText text={text} description={description} />
                     </div>
-                    <div className="col-12 col-md-6 image-container vetrina-container">
+                    <div className="col-12 col-md-7 col-lg-6 image-container vetrina-container">
                         <ImageVetrina imgSrc={image} alt="Menu" href={href} />
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

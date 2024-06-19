@@ -11,7 +11,7 @@ const Footer = () => {
         >
             <div className="container">
                 <div className="row content justify-content-center align-items-start mbr-black">
-                    <div className="col-12 col-md-6 col-lg-4 pb-3 d-flex flex-column align-items-center">
+                    <div className="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
                         <div className="contacts w-100 text-center">
                             <h3 className="contacts-title mbr-fonts-style pb-2 align-center display-5">
                                 Contacts
@@ -32,7 +32,7 @@ const Footer = () => {
                                 Voghera, PV 27058
                             </p>
                         </div>
-                        <div className="social-list w-100 text-center pb-3 ">
+                        <div className="social-list w-100 text-center ">
                             <h3 className="follow-title mbr-fonts-style pb-2 align-center display-5">
                                 Follow
                             </h3>
