@@ -12,7 +12,7 @@ const NewestOffer = () => {
                         </div>
                     </div>
                     <div className="col-md-6 offer-container" id="text">
-                        <div className="offer-description text-wrap">
+                        <div className="offer-description text-wrap ">
                             <span>SPECIAL</span>
                             <span id="offer-name">BUDDY BURGER</span>
                             <span>

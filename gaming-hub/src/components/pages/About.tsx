@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "../organisms/Header/Header";
 import Overlay from "../organisms/Overlay/Overlay";
 import Vetrina from "../organisms/Vetrina/Vetrina";
@@ -5,6 +6,10 @@ import Vetrina from "../organisms/Vetrina/Vetrina";
 const About = () => {
     const aboutUsBannerURL: string = require("../../images/hub_locale.jpg");
     const storyImage1: string = require("../../images/hamburger1_hub.jpg");
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
