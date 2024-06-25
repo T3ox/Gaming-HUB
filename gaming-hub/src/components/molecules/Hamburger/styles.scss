@@ -6,13 +6,12 @@ $item-xl: 280px;
 $item-l: 230px;
 $item-md: 200px;
 $item-sm: 35vw;
-
 .panino-container {
     height: 90%;
     transition: transform 0.4s ease;
     overflow: hidden;
 
-    &:has(#hamburger:hover) {
+    &:has(.panino-inner:hover) {
         transform: scale(1.2);
     }
 
@@ -20,30 +19,65 @@ $item-sm: 35vw;
         position: relative;
         height: $item-4k;
         width: $item-4k;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: 700;
-        text-align: center;
 
-        img {
-            position: absolute;
+        .panino-inner {
+            width: 100%;
             height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            transition: transform 0.999s;
+            text-align: center;
+
+            .card-front,
+            .card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+
+                img {
+                    position: absolute;
+                    height: 100%;
+                }
+
+                #hamburger {
+                    height: 70%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                }
+
+                #ingredients {
+                    z-index: 1;
+                    width: 70%;
+                }
+            }
+
+            .card-front {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                transform: rotateY(0deg);
+            }
+
+            .card-back {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                transform: rotateY(180deg);
+            }
         }
 
-        #hamburger {
-            height: 70%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-
-        #ingredients {
-            z-index: 1;
-            width: 70%;
-            opacity: 0;
+        &:hover {
+            .panino-inner {
+                transform: rotateY(180deg);
+            }
         }
 
         @media (max-width: 2200px) {
@@ -71,22 +105,18 @@ $item-sm: 35vw;
             width: $item-sm;
         }
     }
+}
+span {
+    font: bold 1.75rem sans-serif;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 5px;
 
-    .ingredients-toggled {
+    @media (max-width: $xxl) {
+        font: bold 1.5rem sans-serif;
     }
 
-    span {
-        font: bold 1.75rem sans-serif;
-        overflow: hidden;
-        text-align: center;
-        padding-bottom: 5px;
-
-        @media (max-width: $xxl) {
-            font: bold 1.5rem sans-serif;
-        }
-
-        @media (max-width: 370px) {
-            font: bold 1rem sans-serif;
-        }
+    @media (max-width: 370px) {
+        font: bold 1rem sans-serif;
     }
 }
