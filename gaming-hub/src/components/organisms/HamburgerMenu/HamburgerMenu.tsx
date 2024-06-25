@@ -13,7 +13,7 @@ const HamburgerMenu = () => {
                     >
                         <HamburgerComponent
                             name={hamburger.name}
-                            description=""
+                            description={hamburger.description}
                             img={hamburger.img}
                         />
                     </div>

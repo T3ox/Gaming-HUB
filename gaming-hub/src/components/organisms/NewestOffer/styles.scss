@@ -1,7 +1,8 @@
 @import "../../../utils/variables";
 
-$fs-xxl: 3.7vw;
-$fs-md: 8.8vw;
+$fs-large: 4.5vw;
+$fs-medium: 6vw;
+$fs-small: 8.8vw;
 
 .banner {
     position: relative;
@@ -26,8 +27,7 @@ $fs-md: 8.8vw;
 
     .container {
         max-width: 90% !important;
-        height: fit-content;
-        padding: 0;
+        margin: 10px auto;
 
         .row {
             align-items: center;
@@ -40,7 +40,7 @@ $fs-md: 8.8vw;
                 padding: 0;
 
                 .offer-img {
-                    width: 60%;
+                    width: 70%;
 
                     img {
                         width: 100%;
@@ -52,6 +52,7 @@ $fs-md: 8.8vw;
                     width: 100%;
                     font: 400 Inter, sans-serif;
                     text-align: center;
+                    font-size: $fs-large;
 
                     :nth-child(2) {
                         font-weight: bold;
@@ -60,6 +61,7 @@ $fs-md: 8.8vw;
                     :nth-child(3) {
                         width: 85%;
                         margin: auto;
+                        font-size: calc($fs-large/2);
                     }
 
                     span {
@@ -87,23 +89,36 @@ $fs-md: 8.8vw;
 //MEDIA QUERY
 @media (min-width: 768px) {
     .banner {
-        height: 60svh;
+        height: 65svh;
+    }
+}
+
+@media (max-width: $lg) {
+    .container {
+        .row {
+            .offer-description {
+                font-size: $fs-medium !important;
+
+                :nth-child(3) {
+                    font-size: calc($fs-medium/2.5) !important;
+                }
+            }
+        }
     }
 }
 
 @media (max-width: $md) {
     .banner {
-        max-height: 65svh;
-        margin-top: $navbar-height-md;
+        max-height: 70svh;
     }
 
     .container {
         .row {
             .offer-description {
-                font-size: $fs-md;
+                font-size: $fs-small !important;
 
                 :nth-child(3) {
-                    font-size: calc($fs-md/2.5);
+                    font-size: calc($fs-small/2.5) !important;
                 }
             }
         }
