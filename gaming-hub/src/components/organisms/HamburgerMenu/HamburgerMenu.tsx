@@ -1,4 +1,4 @@
-import { menu } from "../../../utils/menuDatas";
+import { menu } from "../../../utils/LocalDB/menuDatas";
 import HamburgerComponent from "../../molecules/Hamburger/Hamburger";
 import "./styles.scss";
 

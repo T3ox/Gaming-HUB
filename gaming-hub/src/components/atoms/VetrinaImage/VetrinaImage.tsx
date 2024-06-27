@@ -8,6 +8,7 @@ const VetrinaImage: React.FC<Props> = ({ href, imgSrc, alt }) => {
             href={href}
             id="link-menu"
             style={{ cursor: href ? "pointer" : "default" }}
+            className="d-flex justify-content-center"
         >
             <img src={imgSrc} alt={alt} id="img-menu" />
         </a>

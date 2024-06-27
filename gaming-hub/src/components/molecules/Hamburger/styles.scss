@@ -105,18 +105,19 @@ $item-sm: 35vw;
             width: $item-sm;
         }
     }
-}
-span {
-    font: bold 1.75rem sans-serif;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 5px;
 
-    @media (max-width: $xxl) {
-        font: bold 1.5rem sans-serif;
-    }
+    span {
+        font: bold 1.75rem sans-serif;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 5px;
 
-    @media (max-width: 370px) {
-        font: bold 1rem sans-serif;
+        @media (max-width: $xxl) {
+            font: bold 1.5rem sans-serif;
+        }
+
+        @media (max-width: 370px) {
+            font: bold 1rem sans-serif;
+        }
     }
 }

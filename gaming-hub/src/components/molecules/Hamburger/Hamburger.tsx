@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Props from "../../../utils/type";
+import Props from "../../../utils/Props";
 import "./styles.scss";
 const portal = require("../../../images/portal.png") as string;
 const portalReverse = require("../../../images/portal_back.png") as string;

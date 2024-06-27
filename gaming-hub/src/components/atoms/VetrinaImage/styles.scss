@@ -1,12 +1,8 @@
 @import "../../../utils/variables";
 
 #link-menu {
-    /*display: inline;
-    width: 600px;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 500px;
+    max-width: 100%;
     overflow: hidden;
 
     @media (max-width: $md) {
@@ -15,17 +11,12 @@
     }
 
     #img-menu {
-        /*width: 90%;
-        height: auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);*/
         height: 100%;
         width: auto;
         object-fit: cover;
 
         @media (max-width: $md) {
-            width: 90%;
+            width: 100%;
         }
     }
 }

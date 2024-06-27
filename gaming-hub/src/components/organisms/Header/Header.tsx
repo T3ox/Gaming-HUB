@@ -6,7 +6,7 @@ interface CustomCSSProperties extends React.CSSProperties {
     "--heightLg"?: string;
 }
 
-const Header: React.FC<Props> = ({ height, heightLg, image }) => {
+const Header: React.FC<Props> = ({ height, heightLg, image, content }) => {
     const customStyles: CustomCSSProperties = {
         "--height": height,
         "--heightLg": heightLg,
@@ -20,6 +20,7 @@ const Header: React.FC<Props> = ({ height, heightLg, image }) => {
                 className="banner-img"
                 style={customStyles}
             />
+            {content}
         </header>
     );
 };
