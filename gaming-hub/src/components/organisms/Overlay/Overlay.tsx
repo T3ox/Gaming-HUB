@@ -1,5 +1,6 @@
 import OverlayButton from "../../atoms/OverlayButton/OverlayButton";
 import "./styles.scss";
+const whatsappUrl = `https://wa.me/+393519735045`;
 
 const Overlay = () => {
     return (
@@ -11,7 +12,12 @@ const Overlay = () => {
                         <p className="p-1">
                             Non perdere tempo e prenota subito
                         </p>
-                        <OverlayButton text="PRENOTA UN TAVOLO" />
+                        <OverlayButton
+                            text="PRENOTA UN TAVOLO"
+                            handleClick={() => {
+                                window.open(whatsappUrl, "_blank");
+                            }}
+                        />
                     </div>
                 </div>
             </div>

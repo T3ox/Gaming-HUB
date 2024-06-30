@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import LanTitle from "../atoms/LanTitle/LanTitle";
 import Header from "../organisms/Header/Header";
 import PCShowcase from "../organisms/PCShowcase/PCShowcase";
@@ -6,6 +7,8 @@ import "./styles.scss";
 const bannerURL: string = require("../../images/hub_esterno_hq.jpeg");
 
 const LAN = () => {
+    const targetRef = useRef<HTMLDivElement>(null);
+
     return (
         <>
             <div className="header-lan">
@@ -13,9 +16,9 @@ const LAN = () => {
                     height="60svh"
                     heightLg="60svh"
                     image={bannerURL}
-                    content={<LanTitle />}
+                    content={<LanTitle targetRef={targetRef} />}
                 />
-                <PCShowcase />
+                <PCShowcase ref={targetRef} />
                 <PricingOverlay />
             </div>
         </>
