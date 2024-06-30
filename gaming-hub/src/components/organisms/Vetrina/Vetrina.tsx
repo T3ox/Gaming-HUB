@@ -42,7 +42,7 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image, href }) => {
                 <div className="row justify-content-center">
                     <div
                         ref={textRef}
-                        className="col-12 col-md-5 col-lg-6 text-container vetrina-container justify-content-end"
+                        className="col-12 col-md-5 col-lg-6 text-container vetrina-container justify-content-center"
                     >
                         <VetrinaText text={text} description={description} />
                     </div>

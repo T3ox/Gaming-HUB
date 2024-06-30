@@ -74,4 +74,17 @@
 
 #lanPC {
     background-color: $vetrina-lanPC;
+
+    #link-menu {
+        height: 300px;
+        width: 600px;
+        #img-menu {
+            height: 100%;
+            width: 80%;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 35px;
+        }
+    }
 }

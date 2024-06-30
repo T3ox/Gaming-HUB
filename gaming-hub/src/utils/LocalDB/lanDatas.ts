@@ -1,3 +1,5 @@
+const pcImage: string = require("../../images/pc_photo.png");
+
 export const lanDatas = {
     title: "I nostri PC di fascia alta",
     description:
@@ -5,5 +7,5 @@ export const lanDatas = {
         "GPU: Nvidia GeForce 3060 </br>" +
         "RAM: 32Gb DDR4 </br>" +
         "Storage: 1TB SSD NVMe",
-    image: "",
+    image: pcImage,
 };
