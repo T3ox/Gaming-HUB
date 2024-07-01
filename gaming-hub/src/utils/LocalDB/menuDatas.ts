@@ -4,13 +4,13 @@ export const menu: Hamburger[] = [
     {
         name: "Nabbo",
         description:
-            "Carne bovina Piemontese,</br> pomodoro ramato</br>, insalata gentile,</br> maionese",
+            "Carne bovina Piemontese,</br> pomodoro ramato,</br> insalata gentile,</br> maionese",
         img: require("../../images/hamburger hub/1nabbo.png") as string,
     },
     {
         name: "Chicken Glitch",
         description:
-            "Suprema di pollo croccante,</br> insalata gentile</br>, pomodoro ramato,</br> salsa HUB Special",
+            "Suprema di pollo croccante,</br> insalata gentile,</br> pomodoro ramato,</br> salsa HUB Special",
         img: require("../../images/hamburger hub/2chickenGlitch.png") as string,
     },
     {
@@ -22,7 +22,7 @@ export const menu: Hamburger[] = [
     {
         name: "Clutch",
         description:
-            "Carne bovina Piemontese,</br> frittatina con uova da allevamento a terra,</br> Pancetta affumicata,</br> cipolla rossa caramellata,</br> scaglie di grana padano,</br> pomodoro ramato</br>, insalata gentile,</br> salsa smokey Hub",
+            "Carne bovina Piemontese,</br> frittatina,</br> pancetta affumicata,</br> cipolla rossa caramellata,</br> scaglie di grana padano,</br> pomodoro ramato,</br> insalata gentile,</br> salsa smokey Hub",
         img: require("../../images/hamburger hub/4clutch.png") as string,
     },
     {

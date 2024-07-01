@@ -31,10 +31,16 @@ const HamburgerComponent: React.FC<Props> = ({ name, description, img }) => {
 
                     <div className="card-back">
                         <img src={portalReverse} alt="" id="portal" />
-                        <p
+                        <div
                             id="ingredients"
-                            dangerouslySetInnerHTML={{ __html: description }}
-                        />{" "}
+                            className="d-flex justify-content-center align-items-center"
+                        >
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: description,
+                                }}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

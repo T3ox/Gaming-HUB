@@ -3,6 +3,7 @@
 #navbar-header {
     position: relative;
     height: $navbar-height-lg;
+    z-index: 1000;
 
     .navbar {
         width: 100%;

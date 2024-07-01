@@ -5,13 +5,14 @@ $item-xxl: 350px;
 $item-xl: 280px;
 $item-l: 230px;
 $item-md: 200px;
-$item-sm: 35vw;
+$item-sm: 45vw;
+
 .panino-container {
     height: 90%;
-    transition: transform 0.4s ease;
+    transition: transform 0.8s ease;
     overflow: hidden;
 
-    &:has(.panino-inner:hover) {
+    &:has(.panino-shower:hover) {
         transform: scale(1.2);
     }
 
@@ -51,7 +52,7 @@ $item-sm: 35vw;
 
                 #ingredients {
                     z-index: 1;
-                    width: 70%;
+                    overflow: hidden;
                 }
             }
 
@@ -69,7 +70,7 @@ $item-sm: 35vw;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 24px;
+                //font-size: 1.1rem;
                 transform: rotateY(180deg);
             }
         }
@@ -83,26 +84,76 @@ $item-sm: 35vw;
         @media (max-width: 2200px) {
             height: $item-xxl;
             width: $item-xxl;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-xxl * 0.65);
+                width: calc($item-xxl * 0.7);
+            }
         }
 
         @media (max-width: $xxl) {
             height: $item-xl;
             width: $item-xl;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-xl * 0.65);
+                width: calc($item-xl * 0.7);
+            }
         }
 
         @media (max-width: $lg) {
             height: $item-l;
             width: $item-l;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-l * 0.65);
+                width: calc($item-l * 0.7);
+            }
         }
 
         @media (max-width: $md) {
             height: $item-md;
             width: $item-md;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-md * 0.65);
+                width: calc($item-md * 0.7);
+                font-size: 0.8rem;
+            }
         }
 
         @media (max-width: $sm) {
             height: $item-sm;
             width: $item-sm;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-sm * 0.65);
+                width: calc($item-sm * 0.7);
+                font-size: 0.65rem;
+            }
+        }
+
+        @media (max-width: 490px) {
+            height: $item-sm;
+            width: $item-sm;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-sm * 0.65);
+                width: calc($item-sm * 0.7);
+                font-size: 0.5rem;
+            }
         }
     }
 
