@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { menu } from "../../../utils/LocalDB/menuToppings";
+import DropdownElement from "../../atoms/DropdownElement/DropdownElement";
 import "./styles.scss";
 
 const Dropdown = () => {
@@ -35,12 +36,12 @@ const Dropdown = () => {
                             className="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingOne"
                         >
-                            <div
-                                className="accordion-body"
-                                dangerouslySetInnerHTML={{
-                                    __html: section.content,
-                                }}
-                            ></div>
+                            <div className="accordion-body d-flex flex-column">
+                                <DropdownElement
+                                    content={section.content}
+                                    price={section.prezzo}
+                                />
+                            </div>
                         </div>
                     </div>
                 );

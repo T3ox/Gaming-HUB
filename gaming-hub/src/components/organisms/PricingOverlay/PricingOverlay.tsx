@@ -5,8 +5,8 @@ const PricingOverlay = () => {
     return (
         <section className="pricing-overlay">
             <div className="pricing-overlay__container container">
-                <div className="pricing-overlay__row row ">
-                    <div className="pricing-overlay__column col-6 d-flex flex-column align-items-center justify-content-center">
+                <div className="pricing-overlay__row flex-column flex-md-row row ">
+                    <div className="pricing-overlay__column col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <h2 className="pricing-overlay__title">
                             Prezzi postazione LAN
                         </h2>
@@ -15,11 +15,11 @@ const PricingOverlay = () => {
                             una bella sessione di gaming
                         </p>
                     </div>
-                    <div className="pricing-overlay__column col-6 d-flex align-items-center justify-content-center container">
+                    <div className="pricing-overlay__column col-12 col-md-6 d-flex align-items-center justify-content-center container">
                         <div className="row">
                             <div className="col-6">
                                 <PricingContainer
-                                    pricing="GRATIS <br/> con menu"
+                                    pricing="GRATIS con menu"
                                     duration="30 min"
                                 />
                             </div>

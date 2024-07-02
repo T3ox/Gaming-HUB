@@ -1,3 +1,5 @@
+@import "../../../utils/variables";
+
 .pricing-overlay {
     background-color: #0a57ca;
     color: #fff;
@@ -7,17 +9,19 @@
     }
 
     &__row {
+        overflow: hidden;
     }
 
     &__column {
-        padding: 60px 10%;
+        padding: 50px 10px;
+        text-align: center;
 
         &:nth-child(2) {
             background-color: #033888;
         }
 
         .col-6 {
-            height: 175px;
+            height: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -32,6 +36,5 @@
     &__description {
         font-size: 1.5rem;
         line-height: 1.7;
-        text-align: center;
     }
 }

@@ -11,7 +11,7 @@ const PricingContainer: React.FC<Props> = ({ pricing, duration }) => {
         <div className="pricing-container d-flex flex-column align-items-center justify-content-center">
             <div className="pricing-container__pricing text-center">
                 <span
-                    className="pricing-amount"
+                    className="pricing-container__amount"
                     dangerouslySetInnerHTML={{ __html: formattedCost() }}
                 />
             </div>

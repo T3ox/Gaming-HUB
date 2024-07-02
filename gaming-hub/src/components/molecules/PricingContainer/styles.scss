@@ -1,3 +1,5 @@
+@import "../../../utils/variables";
+
 .pricing-container {
     display: flex;
     flex-direction: column;
@@ -8,7 +10,7 @@
     &__pricing {
         display: flex;
         align-items: baseline;
-        font-size: 3rem;
+        //font-size: 3rem;
     }
 
     &__currency {
@@ -18,6 +20,19 @@
 
     &__amount {
         font-size: 3rem;
+        line-height: 1.2;
+
+        @media (max-width: $lg) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: $md) {
+            font-size: 3rem;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 2.2rem;
+        }
     }
 
     &__duration {
