@@ -5,12 +5,13 @@ $item-xxl: 350px;
 $item-xl: 280px;
 $item-l: 230px;
 $item-md: 200px;
-$item-sm: 45vw;
+$item-sm: 40vw;
 
 .panino-container {
     height: 90%;
     transition: transform 0.8s ease;
     overflow: hidden;
+    margin-bottom: 20px;
 
     &:has(.panino-shower:hover) {
         transform: scale(1.2);
