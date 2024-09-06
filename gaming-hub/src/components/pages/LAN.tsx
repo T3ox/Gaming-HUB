@@ -4,7 +4,7 @@ import Header from "../organisms/Header/Header";
 import PCShowcase from "../organisms/PCShowcase/PCShowcase";
 import PricingOverlay from "../organisms/PricingOverlay/PricingOverlay";
 import "./styles.scss";
-const bannerURL: string = require("../../images/hub_esterno_hq.jpeg");
+const bannerURL: string = require("../../images/esterno.jpg");
 
 const LAN = () => {
     const targetRef = useRef<HTMLDivElement>(null);

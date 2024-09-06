@@ -1,5 +1,5 @@
-const imgMenu = require("../../images/about.jpg") as string;
-const imgLAN = require("../../images/sala_LAN2.jpg") as string;
+const imgMenu = require("../../images/menuVetrina.jpg") as string;
+const imgLAN = require("../../images/salaLAN.jpg") as string;
 
 export const db = {
     menu: {

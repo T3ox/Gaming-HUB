@@ -71,8 +71,12 @@ $item-sm: 40vw;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                //font-size: 1.1rem;
+                font-size: 0.9rem;
                 transform: rotateY(180deg);
+
+                @media (max-width: $md) {
+                    font-size: 0.7rem;
+                }
             }
         }
 

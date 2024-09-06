@@ -1,7 +1,7 @@
 import { db } from "../../utils/LocalDB/homeDatas";
 import Header from "../organisms/Header/Header";
 import Vetrina from "../organisms/Vetrina/Vetrina";
-const bannerURL: string = require("../../images/hub_esterno_hq.jpeg");
+const bannerURL: string = require("../../images/esterno.jpg");
 
 const Home = () => {
     return (
