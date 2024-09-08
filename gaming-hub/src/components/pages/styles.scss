@@ -1,18 +1,13 @@
 .loading-gif {
-    height: 80svh;
+    height: 100svh;
+    overflow-y: hidden;
+    transition: all 0.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    //transition: opacity 1.5s ease-in-out;
 }
 
 .body {

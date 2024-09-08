@@ -28,6 +28,7 @@ const HamburgerComponent: React.FC<Props> = ({ name, description, img }) => {
                         <div className="panino-inner">
                             <div className="card-front">
                                 <img src={portal} alt="" id="portal" />
+
                                 <img
                                     src={img}
                                     alt=""

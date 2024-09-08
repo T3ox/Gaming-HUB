@@ -16,7 +16,9 @@ const Menu = () => {
     }, []);
 
     return (
-        <>
+        <div
+            style={isLoading ? { maxHeight: "100svh", overflow: "hidden" } : {}}
+        >
             {isLoading && (
                 <div className="loading-gif d-flex justify-content-center align-items-center">
                     <img
@@ -25,16 +27,15 @@ const Menu = () => {
                     />
                 </div>
             )}
-            {!isLoading && (
-                <div className="fade-in">
-                    <NewestOffer />
-                    <div className={`body`}>
-                        <HamburgerMenu />
-                        <Dropdown />
-                    </div>
+
+            <div style={isLoading ? { opacity: 0 } : { opacity: 1 }}>
+                <NewestOffer />
+                <div className={`body`}>
+                    <HamburgerMenu />
+                    <Dropdown />
                 </div>
-            )}
-        </>
+            </div>
+        </div>
     );
 };
 
