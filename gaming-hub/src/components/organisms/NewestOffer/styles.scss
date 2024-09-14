@@ -1,11 +1,11 @@
 @import "../../../utils/variables";
 
-$fs-large: 4.5vw;
-$fs-medium: 6vw;
+$fs-large: 4vw;
+$fs-medium: 5.5vw;
 $fs-small: 8.8vw;
 
 .banner {
-    position: relative;
+    /*position: relative;
     width: 100%;
     overflow: hidden;
 
@@ -22,8 +22,8 @@ $fs-small: 8.8vw;
         background-size: cover;
         background-repeat: no-repeat;
         filter: brightness(75%);
-        z-index: -1; /* Posto sotto gli altri contenuti di .banner */
-    }
+        z-index: -1; //Posto sotto gli altri contenuti di .banner
+    }*/
 
     .container {
         max-width: 90% !important;
@@ -40,7 +40,9 @@ $fs-small: 8.8vw;
                 padding: 0;
 
                 .offer-img {
-                    width: 70%;
+                    position: relative;
+                    width: 474px;
+                    height: 474px;
 
                     img {
                         width: 100%;
@@ -87,12 +89,6 @@ $fs-small: 8.8vw;
 }
 
 //MEDIA QUERY
-@media (min-width: 768px) {
-    .banner {
-        height: 65svh;
-    }
-}
-
 @media (max-width: $lg) {
     .container {
         .row {

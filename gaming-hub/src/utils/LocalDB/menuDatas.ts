@@ -61,4 +61,10 @@ export const menu: Hamburger[] = [
             "Suprema di pollo croccante,</br> crocchette di patate schiacciate,</br> scamorza affumicata a legna,</br> pancetta croccante,</br> cipolla caramellata,</br> maionese al prezzemolo,</br> salsa BBQ",
         img: require("../../images/hamburger hub/10chickenBot.png") as string,
     },
+    {
+        name: "Season 4",
+        description:
+            "Carne bovina Piemontese, tomino, ovetto all'occhio di bue, pancetta croccante, salsa boscaiola, rucola",
+        img: require("../../images/hamburger hub/11season4.png") as string,
+    },
 ];
