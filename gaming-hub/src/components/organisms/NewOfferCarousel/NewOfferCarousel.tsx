@@ -1,18 +1,42 @@
+import { useEffect, useRef } from "react";
 import { newOffers } from "../../../utils/LocalDB/NewOffers";
 import CarouselNavigationArrow from "../../atoms/CarouselNavigationArrow/CarouselNavigationArrow";
 import NewestOffer from "../NewestOffer/NewestOffer";
 import "./styles.scss";
 
+/*interface CarouselRef extends HTMLDivElement {
+    carousel?: (action: string) => void;
+}*/
+
 const NewOfferCarousel = () => {
+    const carouselRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const carouselElement = carouselRef.current;
+
+        if (carouselElement) {
+            // Inizializza il carosello usando Bootstrap's JS API
+
+            // Recupera l'intervallo impostato (di default o da data attribute)
+            const interval = carouselElement.getAttribute("data-bs-interval");
+
+            // Se l'intervallo esiste, fai il console.log
+            console.log("Intervallo del carosello:", interval);
+
+            // Per esempio, cambia l'intervallo in JavaScript, se necessario
+            // carouselInstance.interval = 5000;
+        }
+    }, []);
+
     return (
         <div className="banner">
             <div
                 id="carouselControls"
                 className="carousel slide position-relative h-100"
                 data-bs-ride="carousel"
-                data-bs-interval="100000"
+                data-bs-interval="5000"
             >
-                <div className="carousel-indicators">
+                <div className="carousel-indicators mt-5">
                     {newOffers.map((x, index) => (
                         <button
                             key={index}
@@ -26,7 +50,7 @@ const NewOfferCarousel = () => {
                         />
                     ))}
                 </div>
-                <div className="carousel-inner">
+                <div className="carousel-inner h-100 d-flex align-items-center">
                     {newOffers.map((offer, index) => (
                         <div
                             className={`carousel-item ${
@@ -34,13 +58,13 @@ const NewOfferCarousel = () => {
                             }`}
                             key={index}
                         >
-                            <div>
+                            <>
                                 <NewestOffer
                                     title={offer.hamburgerName}
                                     ingredients={offer.ingredients}
                                     img={offer.img}
                                 />
-                            </div>
+                            </>
                         </div>
                     ))}
                 </div>

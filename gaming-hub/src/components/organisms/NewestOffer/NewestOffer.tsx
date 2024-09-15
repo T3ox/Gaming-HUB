@@ -1,6 +1,6 @@
 import "./styles.scss";
 import Props from "./types";
-const newOfferImg = require("../../../images/Buddy_nobg.png") as string;
+//const newOfferImg = require("../../../images/Buddy_nobg.png") as string;
 
 const NewestOffer: React.FC<Props> = ({ title, ingredients, img }) => {
     return (
@@ -8,11 +8,7 @@ const NewestOffer: React.FC<Props> = ({ title, ingredients, img }) => {
             <div className="row">
                 <div className="col-md-5 col-lg-6 offer-container" id="image">
                     <div className="offer-img d-flex align-items-center justify-content-center">
-                        <img
-                            alt=""
-                            srcSet={img}
-                            //srcSet={newOfferImg}
-                        />
+                        <img alt="" srcSet={img} />
                     </div>
                 </div>
                 <div className="col-md-7 col-lg-6 offer-container" id="text">
@@ -20,18 +16,10 @@ const NewestOffer: React.FC<Props> = ({ title, ingredients, img }) => {
                         <span>SPECIAL</span>
                         <span id="offer-name">{title}</span>
 
-                        <span>
-                            {/*100g di carne bovina razza Blonde D’Aquitaine,
-                            Panelle di Zia Gina con farina di ceci, prezzemolo e
-                            limone, prosciutto cotto, battuto di pomodoro e
-                            insalata gentile*/}
-                            {ingredients}
-                        </span>
+                        <span>{ingredients}</span>
                     </div>
                 </div>
             </div>
-            {/*<div className="d-flex align-items-center">*/}
-            {/*</div>*/}
         </div>
     );
 };
