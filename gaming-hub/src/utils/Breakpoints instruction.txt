@@ -1,0 +1,16 @@
+GENERAL
+< 768px
+navbar compressed
+header image small size
+
+> 768px
+navbar expand 
+header image full size
+
+HOME PAGE
+...
+
+MENU PAGE
+
+ABOUT PAGE
+

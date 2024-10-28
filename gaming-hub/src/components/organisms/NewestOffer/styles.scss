@@ -1,24 +1,13 @@
 @import "../../../utils/variables";
 
-$fs-xxl: 4vw;
-$fs-md: 7vw;
-$fs-sm: 8.7vw;
-$fs-xs: 9.7vw;
+$fs-large: 4vw;
+$fs-medium: 5.5vw;
+$fs-small: 8.8vw;
 
 .banner {
-    background-image: url("../../../images/bg.png");
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    width: 100%;
-    margin-top: $navbar-height-lg;
-
     .container {
         max-width: 90% !important;
-        height: fit-content;
-        padding: 0;
+        margin: 10px auto;
 
         .row {
             align-items: center;
@@ -31,11 +20,7 @@ $fs-xs: 9.7vw;
                 padding: 0;
 
                 .offer-img {
-                    width: 60%;
-
-                    @media (max-width: 768px) {
-                        max-height: 250px;
-                    }
+                    width: 70%;
 
                     img {
                         width: 100%;
@@ -47,6 +32,7 @@ $fs-xs: 9.7vw;
                     width: 100%;
                     font: 400 Inter, sans-serif;
                     text-align: center;
+                    font-size: $fs-large;
 
                     :nth-child(2) {
                         font-weight: bold;
@@ -55,56 +41,17 @@ $fs-xs: 9.7vw;
                     :nth-child(3) {
                         width: 85%;
                         margin: auto;
-                        font-size: calc($fs-xxl / 2);
+                        font-size: calc($fs-large/2);
                     }
 
                     span {
                         display: block;
                         line-height: 1.4;
                     }
-
-                    @media (min-width: 768px) {
-                        font-size: $fs-xxl;
-                        text-align: center;
-
-                        :nth-child(3) {
-                            font-size: calc($fs-xxl / 2);
-                        }
-                    }
-
-                    //Bootstrap Breakpoint medium
-                    @media (max-width: 767px) {
-                        font-size: $fs-md;
-                        text-align: center;
-
-                        :nth-child(3) {
-                            font-size: calc($fs-md / 2);
-                        }
-                    }
-
-                    //Bootstrap Breakpoint small
-                    @media (max-width: 576px) {
-                        font-size: $fs-sm;
-                        text-align: center;
-
-                        :nth-child(3) {
-                            font-size: calc($fs-sm / 2.5);
-                        }
-                    }
-
-                    //Dispositivo mobile grande
-                    @media (max-width: 425px) {
-                        font-size: $fs-xs;
-                        text-align: center;
-
-                        :nth-child(3) {
-                            font-size: calc($fs-xs / 2.1);
-                        }
-                    }
                 }
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: $md) {
                 flex-direction: column;
 
                 #image {
@@ -117,13 +64,33 @@ $fs-xs: 9.7vw;
             }
         }
     }
+}
 
-    @media (max-width: 767px) {
-        max-height: 65svh;
-        margin-top: $navbar-height-md;
+//MEDIA QUERY
+@media (max-width: $lg) {
+    .container {
+        .row {
+            .offer-description {
+                font-size: $fs-medium !important;
+
+                :nth-child(3) {
+                    font-size: calc($fs-medium/2.5) !important;
+                }
+            }
+        }
     }
+}
 
-    @media (min-width: 768px) {
-        height: 60svh;
+@media (max-width: $md) {
+    .container {
+        .row {
+            .offer-description {
+                font-size: $fs-small !important;
+
+                :nth-child(3) {
+                    font-size: calc($fs-small/2.5) !important;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,34 @@
+@import "../../../utils/variables";
+
+$fs-large: 4.5vw;
+$fs-medium: 6vw;
+$fs-small: 8.8vw;
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 60svh;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../../images/bg.png");
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(75%);
+        z-index: -1; /* Posto sotto gli altri contenuti di .banner */
+    }
+}
+
+@media (max-width: $md) {
+    .banner {
+        height: 55svh;
+    }
+}

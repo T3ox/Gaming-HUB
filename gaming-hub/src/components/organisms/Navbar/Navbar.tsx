@@ -21,7 +21,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <>
+        <header id="navbar-header">
             <nav className={`navbar navbar-expand-md navbar-dark bg-black`}>
                 <a className="navbar-brand fs-4" href="/">
                     Home
@@ -50,8 +50,8 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item mx-2">
-                            <a className="nav-link" href="/indicazioni">
-                                Indicazioni
+                            <a className="nav-link" href="/salaLAN">
+                                Sala
                             </a>
                         </li>
                         <li className="nav-item mx-2">
@@ -97,8 +97,8 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item mx-2">
-                            <a className="nav-link" href="/indicazioni">
-                                Indicazioni
+                            <a className="nav-link" href="/salaLAN">
+                                Sala
                             </a>
                         </li>
                         <li className="nav-item mx-2">
@@ -114,7 +114,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </>
+        </header>
     );
 };
 

@@ -1,21 +1,42 @@
+import { useEffect, useState } from "react";
 import Dropdown from "../molecules/Dropdown/Dropdown";
 import HamburgerMenu from "../organisms/HamburgerMenu/HamburgerMenu";
-import Navbar from "../organisms/Navbar/Navbar";
-import NewestOffer from "../organisms/NewestOffer/NewestOffer";
+import NewOfferCarousel from "../organisms/NewOfferCarousel/NewOfferCarousel";
 import "./styles.scss";
+
 const Menu = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
-        <>
-            <div className="header d-flex overflow-hidden">
-                <Navbar />
-                <NewestOffer />
+        <div
+            style={isLoading ? { maxHeight: "100svh", overflow: "hidden" } : {}}
+        >
+            {isLoading && (
+                <div className="loading-gif d-flex justify-content-center align-items-center">
+                    <img
+                        src={require("../../images/hambugerBuilding.gif")}
+                        alt="loading..."
+                    />
+                </div>
+            )}
+
+            <div style={isLoading ? { opacity: 0 } : { opacity: 1 }}>
+                {/*<NewestOffer />*/}
+                <NewOfferCarousel />
+                <div className={`body`}>
+                    <HamburgerMenu />
+                    <Dropdown />
+                </div>
             </div>
-            <div className="body">
-                <HamburgerMenu />
-                <Dropdown />
-            </div>
-            <footer></footer>
-        </>
+        </div>
     );
 };
 

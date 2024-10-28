@@ -1,40 +1,32 @@
-.background-overlay {
-    background-image: url("../../../images/hub_menu.jpg");
-    background-position: 69% 80%;
-    background-size: cover;
-    filter: brightness(100%);
+@import "../../../utils/variables";
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: inherit;
-        background-position: inherit;
-        background-size: inherit;
-        background-repeat: inherit;
-        filter: brightness(50%);
-        z-index: -1;
+.background-overlay {
+    height: 40svh;
+    position: relative;
+
+    @media (max-width: $md) {
+        height: 30svh;
     }
 
-    @media (max-width: 768px) {
-        background-position: 0% 100%;
-        background-size: 200%;
+    .overlay-image {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 69% 80%;
+        overflow: hidden;
+        filter:brightness(50%)
     }
 
     .overlay-column .row {
-        height: 40svh;
-
-        @media (max-width: 768px) {
-            height: 40svh;
-        }
+        position: relative;
+        z-index: 1;
 
         .overlay-content {
             justify-content: center;
 
-            @media (max-width: 768px) {
+            @media (max-width: $md) {
                 justify-content: flex-end;
                 align-items: center;
             }

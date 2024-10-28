@@ -16,6 +16,8 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "js-cookie": "^2.2.1",
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-cookie": "^7.1.4",

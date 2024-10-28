@@ -1,12 +1,23 @@
+.loading-gif {
+    height: 100svh;
+    overflow-y: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    //transition: opacity 1.5s ease-in-out;
+}
+
 .body {
-    background-image: url("../../images/marmoBackground.png");
     background-blend-mode: multiply;
     background-position: top;
-    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    width: 100%;
-    height: 200%;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../images/marmoBackground.png");
 }
 
 footer {

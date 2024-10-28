@@ -2,17 +2,15 @@
 
 .container-vetrina {
     max-width: 90% !important;
+    font: sans-serif !important;
 
     .row {
         align-items: center;
-        padding: 20px 0 70px 0;
+        padding: 60px 0 60px 0;
         flex-direction: inherit;
 
         .vetrina-container {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             color: black;
             height: 90%;
         }
@@ -30,12 +28,14 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
         max-width: 100% !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
+
         .row {
             flex-direction: column-reverse !important;
+            padding: 0 0 60px 0;
 
             .image-container {
                 align-items: center;
@@ -68,6 +68,23 @@
     .container-vetrina {
         .row {
             flex-direction: row-reverse;
+        }
+    }
+}
+
+#lanPC {
+    background-color: $vetrina-lanPC;
+
+    #link-menu {
+        height: 300px;
+        width: 600px;
+        #img-menu {
+            height: 100%;
+            width: 80%;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 35px;
         }
     }
 }

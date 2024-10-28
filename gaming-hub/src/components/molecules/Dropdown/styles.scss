@@ -1,0 +1,11 @@
+.accordion-header {
+    border-bottom: 1px solid #dee2e6 !important;
+
+    .accordion-button {
+        background-color: white !important;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

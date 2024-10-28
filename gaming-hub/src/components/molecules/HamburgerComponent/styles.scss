@@ -1,0 +1,179 @@
+@import "../../../utils/variables";
+
+$item-4k: 500px;
+$item-xxl: 350px;
+$item-xl: 280px;
+$item-l: 230px;
+$item-md: 200px;
+$item-sm: 40vw;
+
+.panino-container {
+    height: 90%;
+    transition: transform 0.8s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &:has(.panino-shower:hover) {
+        transform: scale(1.2);
+    }
+
+    .panino-shower {
+        position: relative;
+        height: $item-4k;
+        width: $item-4k;
+
+        .panino-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            transition: transform 0.999s;
+            text-align: center;
+
+            .card-front,
+            .card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+
+                img {
+                    position: absolute;
+                    height: 100%;
+                }
+
+                #hamburger {
+                    height: 70%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                }
+
+                #ingredients {
+                    z-index: 1;
+                    overflow: hidden;
+                }
+            }
+
+            .card-front {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                transform: rotateY(0deg);
+            }
+
+            .card-back {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.9rem;
+                transform: rotateY(180deg);
+
+                @media (max-width: $md) {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        &:hover {
+            .panino-inner {
+                transform: rotateY(180deg);
+            }
+        }
+
+        @media (max-width: 2200px) {
+            height: $item-xxl;
+            width: $item-xxl;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-xxl * 0.65);
+                width: calc($item-xxl * 0.7);
+            }
+        }
+
+        @media (max-width: $xxl) {
+            height: $item-xl;
+            width: $item-xl;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-xl * 0.65);
+                width: calc($item-xl * 0.7);
+            }
+        }
+
+        @media (max-width: $lg) {
+            height: $item-l;
+            width: $item-l;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-l * 0.65);
+                width: calc($item-l * 0.7);
+            }
+        }
+
+        @media (max-width: $md) {
+            height: $item-md;
+            width: $item-md;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-md * 0.65);
+                width: calc($item-md * 0.7);
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: $sm) {
+            height: $item-sm;
+            width: $item-sm;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-sm * 0.65);
+                width: calc($item-sm * 0.7);
+                font-size: 0.65rem;
+            }
+        }
+
+        @media (max-width: 490px) {
+            height: $item-sm;
+            width: $item-sm;
+
+            #ingredients {
+                position: relative;
+                top: 10px;
+                height: calc($item-sm * 0.65);
+                width: calc($item-sm * 0.7);
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+    span {
+        font: bold 1.75rem sans-serif;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 5px;
+
+        @media (max-width: $xxl) {
+            font: bold 1.5rem sans-serif;
+        }
+
+        @media (max-width: 370px) {
+            font: bold 1rem sans-serif;
+        }
+    }
+}
