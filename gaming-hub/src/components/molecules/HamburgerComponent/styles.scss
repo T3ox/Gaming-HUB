@@ -1,7 +1,7 @@
 @import "../../../utils/variables";
 
 $item-4k: 500px;
-$item-xxl: 350px;
+$item-xxl: 330px;
 $item-xl: 280px;
 $item-l: 230px;
 $item-md: 200px;
@@ -11,7 +11,7 @@ $item-sm: 40vw;
     height: 90%;
     transition: transform 0.8s ease;
     overflow: hidden;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 
     &:has(.panino-shower:hover) {
         transform: scale(1.2);
@@ -71,12 +71,12 @@ $item-sm: 40vw;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 transform: rotateY(180deg);
+            }
 
-                @media (max-width: $md) {
-                    font-size: 0.7rem;
-                }
+            @media (max-width: $md) {
+                font-size: 0.7rem;
             }
         }
 
@@ -128,10 +128,10 @@ $item-sm: 40vw;
 
             #ingredients {
                 position: relative;
-                top: 10px;
+                //top: 10px;
                 height: calc($item-md * 0.65);
                 width: calc($item-md * 0.7);
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
         }
 

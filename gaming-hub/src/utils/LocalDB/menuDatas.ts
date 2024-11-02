@@ -57,8 +57,10 @@ export const menu: Hamburger[] = [
     },
     {
         name: "Chicken Bot",
+        /*description:
+            "Suprema di pollo croccante,</br> crocchette di patate schiacciate,</br> scamorza affumicata,</br> pancetta croccante,</br> cipolla caramellata,</br> maionese,</br> salsa BBQ",*/
         description:
-            "Suprema di pollo croccante,</br> crocchette di patate schiacciate,</br> scamorza affumicata a legna,</br> pancetta croccante,</br> cipolla caramellata,</br> maionese al prezzemolo,</br> salsa BBQ",
+            "Suprema di pollo croccante, crocchette di patate schiacciate, scamorza affumicata, pancetta croccante, cipolla caramellata, maionese, salsa BBQ",
         img: require("../../images/hamburger hub/10chickenBot.png") as string,
     },
     {

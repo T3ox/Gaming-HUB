@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { menu } from "../../../utils/LocalDB/menuDatas";
 import HamburgerComponent from "../../molecules/HamburgerComponent/HamburgerComponent";
-import "./styles.scss";
+
+const fastCss = {
+    maxWidth: "95%",
+};
 
 const HamburgerMenu = () => {
     const [loadedImages, setLoadedImages] = useState(0);
@@ -19,11 +22,11 @@ const HamburgerMenu = () => {
     }, []);
 
     return (
-        <div className="container menu-container mt-5 fade-in">
+        <div className="container menu-container mt-5 fade-in" style={fastCss}>
             <div className="row">
                 {menu.map((hamburger, index) => (
                     <div
-                        className="col-6 col-md-4 col-xl-3 hamburger-container"
+                        className="col-6 col-md-4 col-xl-3 hamburger-container d-flex justify-content-center align-items-center p-0"
                         key={index}
                     >
                         <HamburgerComponent
