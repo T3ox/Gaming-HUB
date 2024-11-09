@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { newOffers } from "../../../utils/LocalDB/NewOffers";
 import CarouselNavigationArrow from "../../atoms/CarouselNavigationArrow/CarouselNavigationArrow";
 import NewestOffer from "../NewestOffer/NewestOffer";
@@ -9,25 +8,6 @@ import "./styles.scss";
 }*/
 
 const NewOfferCarousel = () => {
-    const carouselRef = useRef<HTMLDivElement | null>(null);
-
-    useEffect(() => {
-        const carouselElement = carouselRef.current;
-
-        if (carouselElement) {
-            // Inizializza il carosello usando Bootstrap's JS API
-
-            // Recupera l'intervallo impostato (di default o da data attribute)
-            const interval = carouselElement.getAttribute("data-bs-interval");
-
-            // Se l'intervallo esiste, fai il console.log
-            console.log("Intervallo del carosello:", interval);
-
-            // Per esempio, cambia l'intervallo in JavaScript, se necessario
-            // carouselInstance.interval = 5000;
-        }
-    }, []);
-
     return (
         <div className="banner">
             <div

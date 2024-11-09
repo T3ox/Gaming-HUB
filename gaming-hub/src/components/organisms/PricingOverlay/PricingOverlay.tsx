@@ -38,7 +38,7 @@ const PricingOverlay = () => {
                             <div className="col-6">
                                 <PricingContainer
                                     pricing="15,00"
-                                    duration="5 ore + 200 hubcoins"
+                                    duration="5 ore + 2000 hubcoins"
                                 />
                             </div>
                         </div>

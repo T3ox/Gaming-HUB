@@ -1,12 +1,20 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import { menu } from "../../../utils/LocalDB/menuToppings";
 import DropdownElement from "../../atoms/DropdownElement/DropdownElement";
 import "./styles.scss";
 
 const Dropdown = () => {
-    useEffect(() => {
-        require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }, []);
+    const [openSections, setOpenSections] = useState<number[]>([]);
+
+    // Funzione per aprire/chiudere una sezione indipendentemente
+    const toggleSection = (index: number) => {
+        setOpenSections(
+            (prevOpenSections) =>
+                prevOpenSections.includes(index)
+                    ? prevOpenSections.filter((i) => i !== index) // Rimuove l'indice se la sezione è aperta (chiude)
+                    : [...prevOpenSections, index] // Aggiunge l'indice se la sezione è chiusa (apre)
+        );
+    };
 
     return (
         <div
@@ -21,20 +29,29 @@ const Dropdown = () => {
                             id={`panelsStayOpen-${index}`}
                         >
                             <button
-                                className="accordion-button collapsed"
+                                className={`accordion-button ${
+                                    openSections.includes(index)
+                                        ? ""
+                                        : "collapsed"
+                                }`}
                                 type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target={`#panelsStayOpen-collapse${index}`}
-                                aria-expanded="false"
-                                aria-controls={`panelsStayOpen-collapse${index}`}
+                                onClick={() => toggleSection(index)}
+                                //data-bs-toggle="collapse"
+                                //data-bs-target={`#panelsStayOpen-collapse${index}`}
+                                //aria-expanded="false"
+                                //aria-controls={`panelsStayOpen-collapse${index}`}
+                                aria-expanded={openSections.includes(index)}
+                                aria-controls={`collapse-${index}`}
                             >
                                 {section.header}
                             </button>
                         </h2>
                         <div
                             id={`panelsStayOpen-collapse${index}`}
-                            className="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingOne"
+                            className={`accordion-collapse collapse ${
+                                openSections.includes(index) ? "show" : ""
+                            }`}
+                            //aria-labelledby="panelsStayOpen-headingOne"
                         >
                             <div className="accordion-body d-flex flex-column">
                                 <DropdownElement

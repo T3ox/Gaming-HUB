@@ -8,7 +8,7 @@ $fs-small: 8.8vw;
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 60svh;
+    height: 50svh;
 
     &::before {
         content: "";
@@ -29,6 +29,6 @@ $fs-small: 8.8vw;
 
 @media (max-width: $md) {
     .banner {
-        height: 55svh;
+        height: 50svh;
     }
 }
