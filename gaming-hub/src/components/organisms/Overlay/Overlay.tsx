@@ -1,7 +1,7 @@
 import OverlayButton from "../../atoms/OverlayButton/OverlayButton";
 import "./styles.scss";
 const whatsappUrl = `https://wa.me/+393519735045`;
-const backgroundImage = require("../../../images/hub_menu.jpg");
+const backgroundImage = require("../../../images/hub_menu.jpeg");
 const Overlay = () => {
     return (
         <div className="background-overlay text-white d-flex justify-content-center align-items-center">

@@ -13,7 +13,7 @@ const Home = () => {
                 content={<></>}
             />
             <Vetrina type="menu" {...db.menu} href="/menu" />
-            <Vetrina type="lan" {...db.lan} href="" />
+            <Vetrina type="lan" {...db.lan} href="/salaLAN" />
         </>
     );
 };

@@ -17,7 +17,7 @@ const Footer = () => {
                                 Contacts
                             </h3>
                             <p className="contacts-block mbr-fonts-style align-center display-7">
-                                Email: info-hub@gmail.com
+                                Email: info@hubgoodfood.com
                                 <br />
                                 Telefono: +39 351 973 5045
                             </p>
@@ -82,12 +82,12 @@ const Footer = () => {
                             </div>
                             <div className="col-7 hours-column mbr-fonts-style align-left display-7 d-flex">
                                 <span>Chiuso</span>
-                                <span>12-15:30, 17:30-23</span>
-                                <span>12-15:30, 17:30-23</span>
-                                <span>12-15:30, 17:30-23</span>
-                                <span>12-00</span>
-                                <span>12-00</span>
-                                <span>17:30-00</span>
+                                <span>17:30-23:00</span>
+                                <span>12:00-15:00, 17:30-23:00</span>
+                                <span>12:00-15:00, 17:30-23:00</span>
+                                <span>12:00-15:00, 17:30-23:00</span>
+                                <span>12:00-15:00, 17:30-23:00</span>
+                                <span>17:30-23:00</span>
                             </div>
                         </div>
                     </div>

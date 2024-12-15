@@ -1,26 +1,33 @@
 export const newOffers = [
     {
         smallTitle: "SPECIAL",
-        hamburgerName: "SEASON 1",
+        hamburgerName: "HUBSMASH",
         ingredients:
-            "Carne Bovina Piemontese, burratina intera pugliese, lardo stagionato, " +
-            "maionese basilico e pistacchio, rucola",
-        img: require("../../images/Offers/season1_burger.png") as string,
+            "Il classico Cheeseburger ma Smashed (con cheddar, cetriolino, pancetta croccantissima e ketchup)",
+        img: require("../../images/Offers/smash.png") as string,
     },
     {
         smallTitle: "SPECIAL",
-        hamburgerName: "BUDDY BURGER",
+        hamburgerName: "VEGAN BURGER",
         ingredients:
-            "Carne bovina razza Blonde D’Aquitaine, Panelle di Zia Gina con farina di ceci, " +
-            "prezzemolo e limone, prosciutto cotto, battuto di pomodoro e insalata gentile",
-        img: require("../../images/Offers/buddy_burger.png") as string,
+            "Burger Vegano di soia e frumento, pesto di basilico 100% vegetale, finocchi marinati all'aceto" +
+            "balsamico, pomodori confit e spinacino",
+        img: require("../../images/Offers/vegan_burger.png") as string,
     },
     {
         smallTitle: "SPECIAL",
         hamburgerName: "KebHub Burger",
         ingredients:
-            "Carne bovina piemontese, finocchi marinati in aceto balsamico e pepe, " +
-            "anelli di cipolla, salsa piccantina, salsa yogurt, pomodoro e insalata gentile",
+        "Carne bovina piemontese, finocchi marinati in aceto balsamico e pepe, " +
+        "anelli di cipolla, salsa piccantina, salsa yogurt, pomodoro e insalata gentile",
         img: require("../../images/Offers/kebhub.png") as string,
+    },
+    {
+        smallTitle: "SPECIAL",
+        hamburgerName: "SCARY BURGER",
+        ingredients:
+            "Pane nero al carbone vegetale, carne bovina piemontese, maionese al Curry, doppio Cheddar, " +
+            "cipolla caramellata, pancetta croccante, pomodoro ramato e insalata gentile",
+        img: require("../../images/Offers/scary_burger.png") as string,
     },
 ];
