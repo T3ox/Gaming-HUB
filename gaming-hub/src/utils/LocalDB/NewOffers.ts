@@ -22,12 +22,4 @@ export const newOffers = [
         "anelli di cipolla, salsa piccantina, salsa yogurt, pomodoro e insalata gentile",
         img: require("../../images/Offers/kebhub.png") as string,
     },
-    {
-        smallTitle: "SPECIAL",
-        hamburgerName: "SCARY BURGER",
-        ingredients:
-            "Pane nero al carbone vegetale, carne bovina piemontese, maionese al Curry, doppio Cheddar, " +
-            "cipolla caramellata, pancetta croccante, pomodoro ramato e insalata gentile",
-        img: require("../../images/Offers/scary_burger.png") as string,
-    },
 ];
