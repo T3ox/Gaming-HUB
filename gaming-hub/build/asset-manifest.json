@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc309f96.css",
-    "main.js": "/static/js/main.43c89530.js",
+    "main.js": "/static/js/main.46b0c47d.js",
     "static/js/453.eeeb2488.chunk.js": "/static/js/453.eeeb2488.chunk.js",
     "static/media/smash.png": "/static/media/smash.349954fce088d5c50b9c.png",
     "static/media/scary_burger.png": "/static/media/scary_burger.77df8144733a1903d684.png",
@@ -32,11 +32,11 @@
     "static/media/portal_back.png": "/static/media/portal_back.801c4fcbbcc1ed19ab1b.png",
     "index.html": "/index.html",
     "main.cc309f96.css.map": "/static/css/main.cc309f96.css.map",
-    "main.43c89530.js.map": "/static/js/main.43c89530.js.map",
+    "main.46b0c47d.js.map": "/static/js/main.46b0c47d.js.map",
     "453.eeeb2488.chunk.js.map": "/static/js/453.eeeb2488.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc309f96.css",
-    "static/js/main.43c89530.js"
+    "static/js/main.46b0c47d.js"
   ]
 }
