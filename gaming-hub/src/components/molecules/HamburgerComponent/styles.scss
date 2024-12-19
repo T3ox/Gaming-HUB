@@ -175,5 +175,10 @@ $item-sm: 40vw;
         @media (max-width: 370px) {
             font: bold 1rem sans-serif;
         }
+
+        //padding per dispositivi iOS
+        @supports (-webkit-touch-callout: none) and (not (pointer: fine)) {
+            padding-bottom: 1rem; 
+        }
     }
 }

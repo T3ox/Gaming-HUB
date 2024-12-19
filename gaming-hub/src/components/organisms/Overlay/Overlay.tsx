@@ -21,7 +21,7 @@ const Overlay = () => {
                     </div>
                 </div>
             </div>
-            <img className="overlay-image" src={backgroundImage} />
+            <img className="overlay-image" alt="" src={backgroundImage} />
         </div>
     );
 };

@@ -17,7 +17,7 @@ const Footer = () => {
                                 Contacts
                             </h3>
                             <p className="contacts-block mbr-fonts-style align-center display-7">
-                                Email: info@hubgoodfood.com
+                                Email: hub.gfgz@gmail.com
                                 <br />
                                 Telefono: +39 351 973 5045
                             </p>

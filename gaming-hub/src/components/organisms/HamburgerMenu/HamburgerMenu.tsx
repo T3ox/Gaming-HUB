@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { menu } from "../../../utils/LocalDB/menuDatas";
 import HamburgerComponent from "../../molecules/HamburgerComponent/HamburgerComponent";
+import "./styles.scss";
 
 const fastCss = {
     maxWidth: "95%",

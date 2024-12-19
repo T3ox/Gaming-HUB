@@ -10,7 +10,7 @@ export const newOffers = [
         smallTitle: "SPECIAL",
         hamburgerName: "VEGAN BURGER",
         ingredients:
-            "Burger Vegano di soia e frumento, pesto di basilico 100% vegetale, finocchi marinati all'aceto" +
+            "Burger Vegano di soia e frumento, pesto di basilico 100% vegetale, finocchi marinati all'aceto " +
             "balsamico, pomodori confit e spinacino",
         img: require("../../images/Offers/vegan_burger.png") as string,
     },

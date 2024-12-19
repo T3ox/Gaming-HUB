@@ -14,9 +14,9 @@ const NewOfferCarousel = () => {
                 id="carouselControls"
                 className="carousel slide position-relative h-100"
                 data-bs-ride="carousel"
-                data-bs-interval="5000"
+                data-bs-interval="90000"
             >
-                <div className="carousel-indicators mt-5">
+                <div className="carousel-indicators">
                     {newOffers.map((x, index) => (
                         <button
                             key={index}
