@@ -1,17 +1,16 @@
 @import "../../../utils/variables";
 
-$item-4k: 500px;
-$item-xxl: 330px;
-$item-xl: 280px;
-$item-l: 230px;
-$item-md: 200px;
-$item-sm: 40vw;
+$item-4k: 100px;
+$item-xxl: 380px;
+$item-xl: 330px;
+$item-l: 300px;
+$item-md: 280px;
+$item-sm: 45vw;
 
 .panino-container {
     height: 90%;
     transition: transform 0.8s ease;
     overflow: hidden;
-    //margin-bottom: 20px;
 
     &:has(.panino-shower:hover) {
         transform: scale(1.2);
@@ -54,6 +53,11 @@ $item-sm: 40vw;
                 #ingredients {
                     z-index: 1;
                     overflow: hidden;
+
+                    p {
+                        padding: 5px;
+                        margin-bottom: 0 !important;
+                    }
                 }
             }
 
@@ -72,11 +76,8 @@ $item-sm: 40vw;
                 align-items: center;
                 justify-content: center;
                 font-size: 1.1rem;
+                font-weight: 500;
                 transform: rotateY(180deg);
-            }
-
-            @media (max-width: $md) {
-                font-size: 0.7rem;
             }
         }
 
@@ -93,20 +94,20 @@ $item-sm: 40vw;
             #ingredients {
                 position: relative;
                 top: 10px;
-                height: calc($item-xxl * 0.65);
-                width: calc($item-xxl * 0.7);
+                width: calc($item-xxl/1.4);
+                font-size: 1rem;
             }
         }
 
-        @media (max-width: $xxl) {
+        @media (max-width: $xl) {
             height: $item-xl;
             width: $item-xl;
 
             #ingredients {
                 position: relative;
                 top: 10px;
-                height: calc($item-xl * 0.65);
-                width: calc($item-xl * 0.7);
+                width: calc($item-xl / 1.4);
+                font-size: 0.8rem;
             }
         }
 
@@ -117,8 +118,8 @@ $item-sm: 40vw;
             #ingredients {
                 position: relative;
                 top: 10px;
-                height: calc($item-l * 0.65);
-                width: calc($item-l * 0.7);
+                width: calc($item-l / 1.4);
+                font-size: 0.9rem;
             }
         }
 
@@ -129,9 +130,8 @@ $item-sm: 40vw;
             #ingredients {
                 position: relative;
                 //top: 10px;
-                height: calc($item-md * 0.65);
-                width: calc($item-md * 0.7);
-                font-size: 0.7rem;
+                width: calc($item-md / 1.4);
+                font-size: 0.75rem;
             }
         }
 
@@ -142,8 +142,7 @@ $item-sm: 40vw;
             #ingredients {
                 position: relative;
                 top: 10px;
-                height: calc($item-sm * 0.65);
-                width: calc($item-sm * 0.7);
+                width: calc($item-sm / 1.4);
                 font-size: 0.65rem;
             }
         }
@@ -155,8 +154,7 @@ $item-sm: 40vw;
             #ingredients {
                 position: relative;
                 top: 10px;
-                height: calc($item-sm * 0.65);
-                width: calc($item-sm * 0.7);
+                width: calc($item-sm / 1.4);
                 font-size: 0.5rem;
             }
         }
@@ -180,5 +178,6 @@ $item-sm: 40vw;
         @supports (-webkit-touch-callout: none) and (not (pointer: fine)) {
             padding-bottom: 1rem; 
         }
+
     }
 }

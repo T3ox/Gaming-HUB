@@ -4,7 +4,7 @@ import "./styles.scss";
 const portal = require("../../../images/portal.png") as string;
 const portalReverse = require("../../../images/portal_back.png") as string;
 
-const HamburgerComponent: React.FC<Props> = ({ name, description, img }) => {
+const HamburgerComponent: React.FC<Props> = ({ name, description, img, prices }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isLoadedImages, setIsLoadedImages] = useState(false);
 
@@ -43,15 +43,22 @@ const HamburgerComponent: React.FC<Props> = ({ name, description, img }) => {
 
                             <div className="card-back">
                                 <img src={portalReverse} alt="" id="portal" />
-                                <div
-                                    id="ingredients"
-                                    className="d-flex justify-content-center align-items-center"
-                                >
+                                    <div
+                                        id="ingredients"
+                                        className="d-flex justify-content-center align-items-center flex-column"
+                                    >
                                     <p
                                         dangerouslySetInnerHTML={{
                                             __html: description,
                                         }}
                                     />
+                                    <div className="prices d-flex">
+                                        {Object.entries(prices).map(([size, price]) => (
+                                            <p key={size} >
+                                                {size}: {price}
+                                            </p>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>

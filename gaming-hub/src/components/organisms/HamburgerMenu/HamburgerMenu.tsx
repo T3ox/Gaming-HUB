@@ -34,6 +34,7 @@ const HamburgerMenu = () => {
                             name={hamburger.name}
                             description={hamburger.description}
                             img={hamburger.img}
+                            prices={hamburger.prices}
                         />
                     </div>
                 ))}
