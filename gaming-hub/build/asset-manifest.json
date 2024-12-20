@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc309f96.css",
-    "main.js": "/static/js/main.46b0c47d.js",
+    "main.css": "/static/css/main.0512daa8.css",
+    "main.js": "/static/js/main.cc16d10a.js",
     "static/js/453.eeeb2488.chunk.js": "/static/js/453.eeeb2488.chunk.js",
-    "static/media/smash.png": "/static/media/smash.349954fce088d5c50b9c.png",
-    "static/media/scary_burger.png": "/static/media/scary_burger.77df8144733a1903d684.png",
-    "static/media/vegan_burger.png": "/static/media/vegan_burger.28730a212c326975ad32.png",
+    "static/media/smash.png": "/static/media/smash.a56b4914fcb57e53060f.png",
+    "static/media/kebhub.png": "/static/media/kebhub.2a2f07a9a91eb9cdaf34.png",
+    "static/media/vegan_burger.png": "/static/media/vegan_burger.8fa82f6baedf03a4979f.png",
     "static/media/hub_locale.jpg": "/static/media/hub_locale.4704741e8673f01bb82b.jpg",
     "static/media/marmoBackground.png": "/static/media/marmoBackground.fcd30b6ce1e8e70c55a6.png",
     "static/media/5pro.png": "/static/media/5pro.872109b153f0ce1a4c8f.png",
@@ -18,7 +18,6 @@
     "static/media/3cheater.png": "/static/media/3cheater.d864ea1eb627d52204a0.png",
     "static/media/8hub.png": "/static/media/8hub.7be9b6e67ccd1888f29b.png",
     "static/media/11season4.png": "/static/media/11season4.bcb7817a4edf584cfaab.png",
-    "static/media/kebhub.png": "/static/media/kebhub.b139867639335f280fb3.png",
     "static/media/2chickenGlitch.png": "/static/media/2chickenGlitch.f2482cff5881581874c0.png",
     "static/media/10chickenBot.png": "/static/media/10chickenBot.477620a9e43cd094ec7d.png",
     "static/media/bg.png": "/static/media/bg.71cf7be837b9ef580d48.png",
@@ -31,12 +30,12 @@
     "static/media/salaLAN.jpg": "/static/media/salaLAN.c5e0f71febc1d1d73893.jpg",
     "static/media/portal_back.png": "/static/media/portal_back.801c4fcbbcc1ed19ab1b.png",
     "index.html": "/index.html",
-    "main.cc309f96.css.map": "/static/css/main.cc309f96.css.map",
-    "main.46b0c47d.js.map": "/static/js/main.46b0c47d.js.map",
+    "main.0512daa8.css.map": "/static/css/main.0512daa8.css.map",
+    "main.cc16d10a.js.map": "/static/js/main.cc16d10a.js.map",
     "453.eeeb2488.chunk.js.map": "/static/js/453.eeeb2488.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc309f96.css",
-    "static/js/main.46b0c47d.js"
+    "static/css/main.0512daa8.css",
+    "static/js/main.cc16d10a.js"
   ]
 }

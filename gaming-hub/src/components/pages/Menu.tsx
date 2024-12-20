@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Dropdown from "../molecules/Dropdown/Dropdown";
 import HamburgerMenu from "../organisms/HamburgerMenu/HamburgerMenu";
 import NewOfferCarousel from "../organisms/NewOfferCarousel/NewOfferCarousel";
+import Overlay from "../organisms/Overlay/Overlay";
 import "./styles.scss";
 
 const Menu = () => {
@@ -29,11 +30,11 @@ const Menu = () => {
             )}
 
             <div style={isLoading ? { opacity: 0 } : { opacity: 1 }}>
-                {/*<NewestOffer />*/}
                 <NewOfferCarousel />
                 <div className={`body`}>
                     <HamburgerMenu />
                     <Dropdown />
+                    <Overlay />
                 </div>
             </div>
         </div>

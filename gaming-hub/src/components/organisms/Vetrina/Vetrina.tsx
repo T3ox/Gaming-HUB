@@ -9,9 +9,9 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image, href }) => {
 
     useEffect(() => {
         const options = {
-            root: null, // usiamo l'elemento principale come root
-            rootMargin: "0px", // nessun margine
-            threshold: 0.5, // soglia del 50% di visibilità
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5,
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -23,17 +23,19 @@ const Vetrina: React.FC<Props> = ({ type, text, description, image, href }) => {
             });
         }, options);
 
-        if (textRef.current) {
-            observer.observe(textRef.current);
+        const currentTextRef = textRef.current; // Copia il valore di textRef.current in una variabile
+
+        if (currentTextRef) {
+            observer.observe(currentTextRef);
         }
 
         // Pulizia dell'Observer quando il componente si smonta
         return () => {
-            if (textRef.current) {
-                observer.unobserve(textRef.current);
+            if (currentTextRef) {
+                observer.unobserve(currentTextRef); // Usa la variabile locale per la pulizia
             }
         };
-    }, []);
+    }, []); // Il secondo array di dipendenze è vuoto per eseguire l'effetto una sola volta
 
     return (
         <section className="dynamic-container" id={type}>

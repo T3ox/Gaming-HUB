@@ -1,11 +1,28 @@
+import { useEffect } from "react";
 import { useCookies } from "react-cookie";
 import "./styles.scss";
 
 const CookieNotice = () => {
     const [cookies, setCookie] = useCookies(["cookieConsent"]);
+
     const giveCookieConsent = () => {
         setCookie("cookieConsent", true, { path: "/" });
     };
+    
+    const refuseCookieConsent = () => {
+        setCookie("cookieConsent", false, { path: "/" });
+    };
+
+    useEffect(() => {
+        if (cookies.cookieConsent !== undefined) {
+            return;
+        }
+    }, [cookies.cookieConsent]);
+
+    if (cookies.cookieConsent !== undefined) {
+        return null; 
+    }
+
     return (
         <div className="cookie-notice d-flex flex-column align-items-center justify-content-center shadow-lg">
             <svg
@@ -29,6 +46,10 @@ const CookieNotice = () => {
             </p>
             <button className="acceptButton" onClick={giveCookieConsent}>
                 Accetta
+            </button>
+
+            <button className="acceptButton" onClick={refuseCookieConsent}>
+                Rifiuta
             </button>
         </div>
     );
