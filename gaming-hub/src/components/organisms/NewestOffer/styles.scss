@@ -1,8 +1,14 @@
 @import "../../../utils/variables";
 
-$fs-large: 4vw;
+/*$fs-large: 5vw;
 $fs-medium: 5.5vw;
-$fs-small: 8.8vw;
+$fs-small: 8.8vw;*/
+
+$fs-default: 4rem;
+$fs-xlarge: 3.5rem;
+$fs-large: 3.1rem;
+$fs-medium: 3.2rem;
+$fs-small: 2.2rem;
 
 .banner {
     .container {
@@ -32,7 +38,7 @@ $fs-small: 8.8vw;
                     width: 100%;
                     font: 400 Inter, sans-serif;
                     text-align: center;
-                    font-size: $fs-large;
+                    font-size: $fs-default;
 
                     :nth-child(2) {
                         font-weight: bold;
@@ -41,7 +47,7 @@ $fs-small: 8.8vw;
                     :nth-child(3) {
                         width: 85%;
                         margin: auto;
-                        font-size: calc($fs-large/2);
+                        font-size: calc($fs-default/2.2);
                     }
 
                     span {
@@ -67,14 +73,28 @@ $fs-small: 8.8vw;
 }
 
 //MEDIA QUERY
+@media (max-width: $xl) {
+    .container {
+        .row {
+            .offer-description {
+                font-size: $fs-xlarge !important;
+
+                :nth-child(3) {
+                    font-size: calc($fs-xlarge/2.2) !important;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: $lg) {
     .container {
         .row {
             .offer-description {
-                font-size: $fs-medium !important;
+                font-size: $fs-large !important;
 
                 :nth-child(3) {
-                    font-size: calc($fs-medium/2.5) !important;
+                    font-size: calc($fs-large/2.2) !important;
                 }
             }
         }
@@ -85,10 +105,24 @@ $fs-small: 8.8vw;
     .container {
         .row {
             .offer-description {
+                font-size: $fs-medium !important;
+
+                :nth-child(3) {
+                    font-size: calc($fs-medium/2.2) !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .container {
+        .row {
+            .offer-description {
                 font-size: $fs-small !important;
 
                 :nth-child(3) {
-                    font-size: calc($fs-small/2.5) !important;
+                    font-size: calc($fs-small/2.2) !important;
                 }
             }
         }

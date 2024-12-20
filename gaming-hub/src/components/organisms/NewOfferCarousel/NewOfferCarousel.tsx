@@ -16,7 +16,7 @@ const NewOfferCarousel = () => {
                 data-bs-ride="carousel"
                 data-bs-interval="90000"
             >
-                <div className="carousel-indicators">
+                <div className="carousel-indicators ">
                     {newOffers.map((x, index) => (
                         <button
                             key={index}
@@ -30,7 +30,7 @@ const NewOfferCarousel = () => {
                         />
                     ))}
                 </div>
-                <div className="carousel-inner h-100 d-flex align-items-center">
+                <div className="carousel-inner d-flex align-items-center">
                     {newOffers.map((offer, index) => (
                         <div
                             className={`carousel-item ${
