@@ -18,11 +18,13 @@
     "js-cookie": "^2.2.1",
     "nth-check": "^2.0.1",
     "postcss": "^8.4.31",
+    "prettier": "^3.4.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-cookie": "^7.1.4",
     "react-dom": "^18.2.0",
     "react-headroom": "^3.2.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.12.0",
     "react-responsive": "^10.0.0",
     "react-router-dom": "^6.20.1",
@@ -62,6 +64,7 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "@types/react-headroom": "^3.2.3",
+    "@types/react-helmet": "^6.1.11",
     "gh-pages": "^6.1.1",
     "sass": "^1.70.0"
   }

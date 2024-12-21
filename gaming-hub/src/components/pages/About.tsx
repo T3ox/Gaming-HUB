@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { aboutDatas } from "../../utils/LocalDB/aboutDatas";
+import DynamicPage from "../../utils/SEO/DynamicPage";
 import Header from "../organisms/Header/Header";
 import Overlay from "../organisms/Overlay/Overlay";
 import Vetrina from "../organisms/Vetrina/Vetrina";
@@ -13,6 +14,8 @@ const About = () => {
 
     return (
         <>
+            <DynamicPage pageName="Chi Siamo" />
+
             <Header
                 height="40svh"
                 heightLg="50svh"

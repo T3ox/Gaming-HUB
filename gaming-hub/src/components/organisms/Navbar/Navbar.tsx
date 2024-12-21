@@ -41,7 +41,7 @@ const Navbar = () => {
                     <ul className="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3 ">
                         <li className="nav-item mx-2">
                             <a className="nav-link" href="/menu">
-                                Menu
+                                Menù
                             </a>
                         </li>
                         <li className="nav-item mx-2">

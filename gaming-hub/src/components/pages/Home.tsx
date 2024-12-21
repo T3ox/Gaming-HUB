@@ -1,4 +1,5 @@
 import { db } from "../../utils/LocalDB/homeDatas";
+import DynamicPage from "../../utils/SEO/DynamicPage";
 import Header from "../organisms/Header/Header";
 import Vetrina from "../organisms/Vetrina/Vetrina";
 const bannerURL: string = require("../../images/esterno.jpg");
@@ -6,6 +7,8 @@ const bannerURL: string = require("../../images/esterno.jpg");
 const Home = () => {
     return (
         <>
+            <DynamicPage pageName="Home" />
+            
             <Header
                 height="60svh"
                 heightLg="100svh"

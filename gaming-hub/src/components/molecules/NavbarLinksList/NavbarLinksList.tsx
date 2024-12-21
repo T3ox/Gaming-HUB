@@ -18,7 +18,7 @@ const styles: React.CSSProperties = {
 const NavbarLinksList = () => {
     return (
         <ul style={styles}>
-            <NavbarLink id="1" path="/menu" text="Menu" />
+            <NavbarLink id="1" path="/menu" text="Menù" />
             <NavbarLink id="2" path="/chiSiamo" text="Chi Siamo" />
             <NavbarLink id="3" path="/indicazioni" text="Indicazioni" />
             <NavbarLink id="4" path="/prenota" text="Prenota" />

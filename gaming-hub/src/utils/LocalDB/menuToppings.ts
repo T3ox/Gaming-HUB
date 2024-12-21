@@ -82,11 +82,11 @@ export const menu = [
             "<strong>TUNA WRHUB</strong></br>Tonno, cipolla caramellata, maionese, pomodoro ramato, rucola</br>",
         ],
         prezzo: [
-            "6,40€ - Menu+2,50€</br></br>",
-            "6,40€ - Menu+2,50€</br></br>",
-            "6,40€ - Menu+2,50€</br></br>",
-            "6,40€ - Menu+2,50€</br></br>",
-            "6,40€ - Menu+2,50€</br></br>",
+            "6,40€ - Menù+2,50€</br></br>",
+            "6,40€ - Menù+2,50€</br></br>",
+            "6,40€ - Menù+2,50€</br></br>",
+            "6,40€ - Menù+2,50€</br></br>",
+            "6,40€ - Menù+2,50€</br></br>",
         ],
     },
     {
@@ -98,10 +98,10 @@ export const menu = [
             "<strong>SEASON 4</strong></br>Cavolo cappuccio saltato, rucola, zucchine alla piastra, pomodoro ramato</br>",
         ],
         prezzo: [
-            "singola 6,50€ - menu: 9€ - extra: hamburger in pezzi o pollo croccante +2,50€",
-            "singola 7€ - menu: 9,50€ - extra: hamburger in pezzi o pollo croccante +2,50€",
-            "singola 8€ - menu: 10,50€ - extra: hamburger in pezzi o pollo croccante +2,50€",
-            "singola 10,50€ - menu: 13€ - extra: hamburger in pezzi o pollo croccante +2,50€",
+            "singola 6,50€ - Menù: 9€ - extra: hamburger in pezzi o pollo croccante +2,50€",
+            "singola 7€ - Menù: 9,50€ - extra: hamburger in pezzi o pollo croccante +2,50€",
+            "singola 8€ - Menù: 10,50€ - extra: hamburger in pezzi o pollo croccante +2,50€",
+            "singola 10,50€ - Menù: 13€ - extra: hamburger in pezzi o pollo croccante +2,50€",
         ],
     },
 ];

@@ -19,7 +19,7 @@ const PricingOverlay = () => {
                         <div className="row">
                             <div className="col-6">
                                 <PricingContainer
-                                    pricing="GRATIS con menu"
+                                    pricing="GRATIS con Menù"
                                     duration="30 min"
                                 />
                             </div>

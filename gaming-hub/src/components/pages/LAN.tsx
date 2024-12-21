@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import DynamicPage from "../../utils/SEO/DynamicPage";
 import LanTitle from "../atoms/LanTitle/LanTitle";
 import Header from "../organisms/Header/Header";
 import PCShowcase from "../organisms/PCShowcase/PCShowcase";
@@ -11,6 +12,8 @@ const LAN = () => {
 
     return (
         <>
+            <DynamicPage pageName="Sala LAN" />
+
             <div className="header-lan">
                 <Header
                     height="60svh"

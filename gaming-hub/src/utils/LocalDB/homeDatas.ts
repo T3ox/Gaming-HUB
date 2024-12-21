@@ -3,11 +3,11 @@ const imgLAN = require("../../images/salaLAN.jpg") as string;
 
 export const db = {
     menu: {
-        text: "Esplora il nostro menu!",
+        text: "Esplora il nostro Menù!",
         description:
             "Vieni a scoprire tutti i nostri succulenti hamburger con nomi ispirati " +
             "al mondo del gaming e con vastissima scelta. Clicca sulla foto per sfogliare " +
-            "il nostro menu completo e preparati a un'esperienza culinaria indimenticabile!",
+            "il nostro Menù completo e preparati a un'esperienza culinaria indimenticabile!",
         image: imgMenu,
     },
     lan: {
