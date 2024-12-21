@@ -41,11 +41,11 @@ const HamburgerComponent: React.FC<Props> = ({ name, description, img, prices })
                                 />
                             </div>
 
-                            <div className="card-back">
+                            <div className="card-back d-flex justify-content-center align-items-center">
                                 <img src={portalReverse} alt="" id="portal" />
                                     <div
                                         id="ingredients"
-                                        className="d-flex justify-content-center align-items-center flex-column"
+                                        className="d-flex justify-content-center align-items-center flex-column gap-2"
                                     >
                                     <p
                                         dangerouslySetInnerHTML={{
