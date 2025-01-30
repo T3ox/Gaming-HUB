@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.48d32e01.css",
-    "main.js": "/static/js/main.641c919a.js",
+    "main.js": "/static/js/main.f6def8e8.js",
     "static/js/453.eeeb2488.chunk.js": "/static/js/453.eeeb2488.chunk.js",
     "static/media/spicy-bot.png": "/static/media/spicy-bot.a043c84e671fdd0b8c5c.png",
-    "static/media/season5.png": "/static/media/season5.e46c33f4c49b9be96af3.png",
+    "static/media/season5.png": "/static/media/season5.c658e31d4e56904ed2ba.png",
     "static/media/smash.png": "/static/media/smash.a56b4914fcb57e53060f.png",
     "static/media/kebhub.png": "/static/media/kebhub.2a2f07a9a91eb9cdaf34.png",
     "static/media/vegan_burger.png": "/static/media/vegan_burger.8fa82f6baedf03a4979f.png",
@@ -33,11 +33,11 @@
     "static/media/portal_back.png": "/static/media/portal_back.801c4fcbbcc1ed19ab1b.png",
     "index.html": "/index.html",
     "main.48d32e01.css.map": "/static/css/main.48d32e01.css.map",
-    "main.641c919a.js.map": "/static/js/main.641c919a.js.map",
+    "main.f6def8e8.js.map": "/static/js/main.f6def8e8.js.map",
     "453.eeeb2488.chunk.js.map": "/static/js/453.eeeb2488.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48d32e01.css",
-    "static/js/main.641c919a.js"
+    "static/js/main.f6def8e8.js"
   ]
 }
