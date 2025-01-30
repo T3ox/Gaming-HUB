@@ -1,8 +1,13 @@
+import Hamburger from "../../../utils/Props";
 import "./styles.scss";
-import Props from "./types";
 //const newOfferImg = require("../../../images/Buddy_nobg.png") as string;
 
-const NewestOffer: React.FC<Props> = ({ title, ingredients, img }) => {
+const NewestOffer: React.FC<Hamburger> = ({
+    name,
+    description,
+    img,
+    prices,
+}) => {
     return (
         <div className="offer-container__header container d-flex justify-content-center">
             <div className="row">
@@ -12,11 +17,19 @@ const NewestOffer: React.FC<Props> = ({ title, ingredients, img }) => {
                     </div>
                 </div>
                 <div className="col-md-7 col-lg-6 offer-container" id="text">
-                    <div className="offer-description text-wrap ">
-                        <span>SPECIAL</span>
-                        <span id="offer-name">{title}</span>
+                    <div className="offer-description d-flex justify-content-center align-items-center flex-column text-wrap ">
+                        <span className="offer-description_name">{name}</span>
+                        <span className="offer-description_ingredients mb-3">
+                            {description}
+                        </span>
 
-                        <span>{ingredients}</span>
+                        <div className="offer-description_price d-flex  align-items-center justify-content-center flex-wrap">
+                            {Object.entries(prices).map(([size, price]) => (
+                                <span key={size}>
+                                    {size}: {price}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

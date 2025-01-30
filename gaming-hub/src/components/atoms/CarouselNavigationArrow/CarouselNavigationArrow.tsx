@@ -4,9 +4,10 @@ interface Props {
 
 const CarouselNavigationArrow: React.FC<Props> = ({ isForward }) => {
     return (
-        <>
+        <div>
             {isForward ? (
                 <button
+                    style={{ width: "5%" }}
                     className="carousel-control-prev"
                     type="button"
                     data-bs-target="#carouselControls"
@@ -20,6 +21,7 @@ const CarouselNavigationArrow: React.FC<Props> = ({ isForward }) => {
                 </button>
             ) : (
                 <button
+                    style={{ width: "5%" }}
                     className="carousel-control-next"
                     type="button"
                     data-bs-target="#carouselControls"
@@ -32,7 +34,7 @@ const CarouselNavigationArrow: React.FC<Props> = ({ isForward }) => {
                     <span className="visually-hidden">Successivo</span>
                 </button>
             )}
-        </>
+        </div>
     );
 };
 

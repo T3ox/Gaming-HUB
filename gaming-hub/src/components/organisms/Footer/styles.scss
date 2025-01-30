@@ -1,7 +1,7 @@
 .footer-container {
     background-color: black;
     color: white;
-    padding: 40px 0;
+    padding: 40px 0 30px 0;
     font-family: serif;
 
     .container {
@@ -17,6 +17,10 @@
             .hours-column {
                 flex-direction: column;
             }
+        }
+
+        .copyright-footer {
+            margin-top: 3rem;
         }
     }
 }

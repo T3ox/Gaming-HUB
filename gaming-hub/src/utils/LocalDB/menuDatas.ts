@@ -10,7 +10,7 @@ export const menu: Hamburger[] = [
             "100g": "7,00€",
             "200g": "8,00€",
             "300g": "10,50€",
-        }
+        },
     },
     {
         name: "Chicken Glitch",
@@ -18,9 +18,9 @@ export const menu: Hamburger[] = [
             "Suprema di pollo croccante, insalata gentile, pomodoro ramato, salsa HUB Special",
         img: require("../../images/hamburger hub/2chickenGlitch.png") as string,
         prices: {
-            "singolo": "6,90€",
-            "doppio": "9,40€",
-        }
+            singolo: "6,90€",
+            doppio: "9,40€",
+        },
     },
     {
         name: "Cheater",
@@ -31,7 +31,7 @@ export const menu: Hamburger[] = [
             "100g": "8,00€",
             "200g": "9,50€",
             "300g": "12,00€",
-        }
+        },
     },
     {
         name: "Clutch",
@@ -42,7 +42,7 @@ export const menu: Hamburger[] = [
             "100g": "9,50€",
             "200g": "11,00€",
             "300g": "13,50€",
-        }
+        },
     },
     {
         name: "Pro",
@@ -53,7 +53,7 @@ export const menu: Hamburger[] = [
             "100g": "10,50€",
             "200g": "12,00€",
             "300g": "14,50€",
-        }
+        },
     },
     {
         name: "Hit",
@@ -64,18 +64,18 @@ export const menu: Hamburger[] = [
             "100g": "10,00€",
             "200g": "11,50€",
             "300g": "14,00€",
-        }
+        },
     },
     {
         name: "Kill",
         description:
-            "Carne bovina Piemontese, peperoni saltati, spianata calabra croccante, cheddar, insalata gentile, salsa al gorgonzola D.O.P., salsa Hub picantina",
+            "Carne bovina Piemontese, peperoni saltati, spianata calabra croccante, cheddar, insalata gentile, salsa al gorgonzola D.O.P., salsa Hub Piccdantina",
         img: require("../../images/hamburger hub/7kill.png") as string,
         prices: {
             "100g": "10,50€",
             "200g": "12,00€",
             "300g": "14,50€",
-        }
+        },
     },
     {
         name: "Hub",
@@ -86,7 +86,7 @@ export const menu: Hamburger[] = [
             "100g": "10,50€",
             "200g": "12,00€",
             "300g": "14,50€",
-        }
+        },
     },
     {
         name: "Veggy",
@@ -94,9 +94,9 @@ export const menu: Hamburger[] = [
             "Burratina pugliese, basilico fresco, battuto di pomodoro secco, melanzana fritta, pomodoro ramato",
         img: require("../../images/hamburger hub/9veggy.png") as string,
         prices: {
-            "Singolo": "8,50€",
+            Singolo: "8,50€",
             "con Hamburger 100g": "+11,00",
-        }
+        },
     },
     {
         name: "Chicken Bot",
@@ -108,17 +108,17 @@ export const menu: Hamburger[] = [
         prices: {
             "100g": "9,50€",
             "200g": "12,00€",
-        }
+        },
     },
     {
-        name: "Season 4",
+        name: "Season 5",
         description:
-            "Carne bovina Piemontese, tomino, ovetto all'occhio di bue, pancetta croccante, salsa boscaiola, rucola",
-        img: require("../../images/hamburger hub/11season4.png") as string,
+            "Carne bovina piemontese, salsa di pomodoro della nonna, friarielli alla napoletana e mozzarella di bufala campana DOP",
         prices: {
             "100g": "13,00€",
             "200g": "14,50€",
             "300g": "17,00€",
-        }
+        },
+        img: require("../../images/Offers/season5.png") as string,
     },
 ];

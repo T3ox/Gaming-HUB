@@ -12,9 +12,9 @@ const NewOfferCarousel = () => {
         <div className="banner">
             <div
                 id="carouselControls"
-                className="carousel slide position-relative h-100"
+                className="carousel slide position-relative h-100 d-flex justify-content-center align-items-center"
                 data-bs-ride="carousel"
-                data-bs-interval="5000"
+                data-bs-interval="7000"
             >
                 <div className="carousel-indicators ">
                     {newOffers.map((x, index) => (
@@ -40,8 +40,9 @@ const NewOfferCarousel = () => {
                         >
                             <>
                                 <NewestOffer
-                                    title={offer.hamburgerName}
-                                    ingredients={offer.ingredients}
+                                    name={offer.name}
+                                    description={offer.description}
+                                    prices={offer.prices}
                                     img={offer.img}
                                 />
                             </>

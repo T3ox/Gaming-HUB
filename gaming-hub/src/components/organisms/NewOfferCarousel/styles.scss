@@ -1,9 +1,5 @@
 @import "../../../utils/variables";
 
-$fs-large: 4.5vw;
-$fs-medium: 6vw;
-$fs-small: 8.8vw;
-
 .banner {
     position: relative;
     width: 100%;
@@ -26,14 +22,11 @@ $fs-small: 8.8vw;
         z-index: -1; /* Posto sotto gli altri contenuti di .banner */
     }
 
-    .carousel-indicators {
-
-    }
-
     .carousel-inner {
         position: relative;
         overflow: hidden;
-        height: 95%;
+        height: 80%;
+        width: 90%;
         transition: transform 0.5s ease-in-out;
     }
 }

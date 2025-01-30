@@ -1,14 +1,10 @@
 @import "../../../utils/variables";
 
-/*$fs-large: 5vw;
-$fs-medium: 5.5vw;
-$fs-small: 8.8vw;*/
-
-$fs-default: 4rem;
+/*$fs-default: 4rem;
 $fs-xlarge: 3.5rem;
 $fs-large: 3.1rem;
 $fs-medium: 3.2rem;
-$fs-small: 2.2rem;
+$fs-small: 2.2rem;*/
 
 .banner {
     .container {
@@ -26,7 +22,7 @@ $fs-small: 2.2rem;
                 padding: 0;
 
                 .offer-img {
-                    width: 70%;
+                    width: 80%;
 
                     img {
                         width: 100%;
@@ -36,18 +32,27 @@ $fs-small: 2.2rem;
                 .offer-description {
                     color: white;
                     width: 100%;
-                    font: 400 Inter, sans-serif;
+                    font:
+                        400 Inter,
+                        sans-serif;
                     text-align: center;
-                    font-size: $fs-default;
 
-                    :nth-child(2) {
+                    .offer-description_name {
                         font-weight: bold;
+                        font-size: calc($fs-default * 2.2);
                     }
 
-                    :nth-child(3) {
-                        width: 85%;
+                    .offer-description_ingredients {
                         margin: auto;
-                        font-size: calc($fs-default/2.2);
+                        font-weight: 500;
+                        font-size: calc($fs-default);
+                    }
+
+                    .offer-description_price {
+                        font-weight: 400;
+                        gap: 5px 20px;
+                        width: 85%;
+                        font-size: calc($fs-default);
                     }
 
                     span {
@@ -77,10 +82,16 @@ $fs-small: 2.2rem;
     .container {
         .row {
             .offer-description {
-                font-size: $fs-xlarge !important;
+                .offer-description_name {
+                    font-size: calc($fs-xlarge * 3) !important;
+                }
 
-                :nth-child(3) {
-                    font-size: calc($fs-xlarge/2.2) !important;
+                .offer-description_ingredients {
+                    font-size: calc($fs-xlarge) !important;
+                }
+
+                .offer-description_price {
+                    font-size: calc($fs-xlarge) !important;
                 }
             }
         }
@@ -91,10 +102,17 @@ $fs-small: 2.2rem;
     .container {
         .row {
             .offer-description {
-                font-size: $fs-large !important;
+                .offer-description_name {
+                    font-size: calc($fs-large * 2.2) !important;
+                }
 
-                :nth-child(3) {
-                    font-size: calc($fs-large/2.2) !important;
+                .offer-description_ingredients {
+                    font-size: calc($fs-large) !important;
+                }
+
+                .offer-description_price {
+                    font-size: calc($fs-large) !important;
+                    width: 85%;
                 }
             }
         }
@@ -105,10 +123,17 @@ $fs-small: 2.2rem;
     .container {
         .row {
             .offer-description {
-                font-size: $fs-medium !important;
+                .offer-description_name {
+                    font-size: calc($fs-medium * 2);
+                }
 
-                :nth-child(3) {
-                    font-size: calc($fs-medium/2.2) !important;
+                .offer-description_ingredients {
+                    font-size: calc($fs-medium) !important;
+                }
+
+                .offer-description_price {
+                    font-size: calc($fs-medium) !important;
+                    width: 75%;
                 }
             }
         }
@@ -118,11 +143,15 @@ $fs-small: 2.2rem;
 @media (max-width: $sm) {
     .container {
         .row {
-            .offer-description {
-                font-size: $fs-small !important;
+            .offer-container {
+                .offer-description {
+                    .offer-description_name {
+                        font-size: calc($fs-small * 2.2) !important;
+                    }
 
-                :nth-child(3) {
-                    font-size: calc($fs-small/2.2) !important;
+                    .offer-description_ingredients {
+                        font-size: calc($fs-small) !important;
+                    }
                 }
             }
         }

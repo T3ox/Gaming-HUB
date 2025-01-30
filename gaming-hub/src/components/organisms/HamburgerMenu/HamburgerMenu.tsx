@@ -8,18 +8,25 @@ const fastCss = {
 };
 
 const HamburgerMenu = () => {
-    const [loadedImages, setLoadedImages] = useState(0);
+    const [loadedImages, setLoadedImages] = useState(false);
 
     useEffect(() => {
-        menu.forEach((hamburger) => {
-            const img = new Image();
-            img.src = hamburger.img;
-            img.onload = () => {
-                setLoadedImages((prevCount) => {
-                    return prevCount + 1;
-                });
-            };
+        const imagePromises = menu.map((hamburger) => {
+            return new Promise<void>((resolve, reject) => {
+                const img = new Image();
+                img.src = hamburger.img;
+                img.onload = () => resolve();
+                img.onerror = () => reject();
+            });
         });
+
+        Promise.all(imagePromises)
+            .then(() => {
+                setLoadedImages(true); // Tutte le immagini sono state caricate
+            })
+            .catch(() => {
+                console.error("Errore nel caricamento delle immagini.");
+            });
     }, []);
 
     return (

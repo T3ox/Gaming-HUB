@@ -1,25 +1,72 @@
-export const newOffers = [
+import Hamburger from "../Props";
+
+export const newOffers: Hamburger[] = [
     {
-        smallTitle: "SPECIAL",
-        hamburgerName: "HUBSMASH",
-        ingredients:
+        name: "Season 5",
+        description:
+            "Carne bovina piemontese, salsa di pomodoro della nonna, friarielli alla napoletana e mozzarella di bufala campana DOP",
+        prices: {
+            "100g": "13,00€",
+            "200g": "14,50€",
+            "300g": "17,00€",
+        },
+        img: require("../../images/Offers/season5.png") as string,
+    },
+    {
+        name: "HUBSMASH",
+        description:
             "Il classico Cheeseburger ma Smashed (con cheddar, cetriolino, pancetta croccantissima e ketchup)",
+        prices: {
+            "100g": "8,50€",
+            "200g": "10,00€",
+            "300g": "12,50€",
+        },
         img: require("../../images/Offers/smash.png") as string,
     },
     {
-        smallTitle: "SPECIAL",
-        hamburgerName: "VEGAN BURGER",
-        ingredients:
+        name: "VEGAN BURGER",
+        description:
             "Burger Vegano di soia e frumento, pesto di basilico 100% vegetale, finocchi marinati all'aceto " +
             "balsamico, pomodori confit e spinacino",
+        prices: {
+            singolo: "13,50€",
+        },
         img: require("../../images/Offers/vegan_burger.png") as string,
     },
     {
-        smallTitle: "SPECIAL",
-        hamburgerName: "KebHub Burger",
-        ingredients:
-        "Carne bovina piemontese, finocchi marinati in aceto balsamico e pepe, " +
-        "anelli di cipolla, salsa piccantina, salsa yogurt, pomodoro e insalata gentile",
+        prices: {
+            "100g": "9,50€",
+            "200g": "11,00€",
+            "300g": "13,50€",
+        },
+        name: "KebHub Burger",
+        description:
+            "Carne bovina piemontese, finocchi marinati in aceto balsamico e pepe, " +
+            "anelli di cipolla, salsa piccantina, salsa yogurt, pomodoro e insalata gentile",
         img: require("../../images/Offers/kebhub.png") as string,
+    },
+    {
+        name: "Spicy Bot",
+        description:
+            "Uno dei nostri must in versione piccantina: suprema di pollo croccante, " +
+            "scamorza affumicata in legno di faggio, cipolla caramellata, spianata " +
+            "calabra piccante, crocchette di patate schiacciate, salsa bbq, " +
+            "maionese al prezzemolo e salsa piccantina.",
+        prices: {
+            singolo: "9,50€",
+            doppio: "12,00€",
+        },
+        img: require("../../images/Offers/spicy-bot.png") as string,
+    },
+    {
+        name: "Season 4",
+        description:
+            "Carne bovina Piemontese, tomino, ovetto all'occhio di bue, pancetta croccante, salsa boscaiola, rucola",
+        prices: {
+            "100g": "13,00€",
+            "200g": "14,50€",
+            "300g": "17,00€",
+        },
+        img: require("../../images/Offers/season4.png") as string,
     },
 ];

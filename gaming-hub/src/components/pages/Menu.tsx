@@ -22,14 +22,16 @@ const Menu = () => {
             <DynamicPage pageName="Menu" />
 
             <div
-                style={isLoading ? { maxHeight: "100svh", overflow: "hidden" } : {}}
-                >
+                style={
+                    isLoading ? { maxHeight: "100svh", overflow: "hidden" } : {}
+                }
+            >
                 {isLoading && (
                     <div className="loading-gif d-flex justify-content-center align-items-center">
                         <img
                             src={require("../../images/hambugerBuilding.gif")}
                             alt="loading..."
-                            />
+                        />
                     </div>
                 )}
 

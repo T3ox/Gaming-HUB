@@ -6,13 +6,20 @@ $vetrina-story: #926b37;
 $vetrina-story2: #7fb8c9;
 $vetrina-lanPC: #d0d3f5;
 
-//NAVBAR HEIGHTS
+// NAVBAR HEIGHTS
 $navbar-height-md: 60px;
 $navbar-height-lg: 9svh;
 
-//BREAKPOINTS VARIABLES
-$sm: 575px;
-$md: 767px;
-$lg: 992px;
-$xl: 1200px;
+// BREAKPOINTS VARIABLES
 $xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 767px;
+$sm: 575px;
+
+// OFFER TEXT SIZES
+$fs-default: 2rem;
+$fs-xlarge: 1.7rem;
+$fs-large: 1.5rem;
+$fs-medium: 1.4rem;
+$fs-small: 1.3rem;

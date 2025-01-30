@@ -91,6 +91,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="copyright-footer text-center">
+                        Sede legale: via Agostino Depretis 12, 27058 Voghera
+                        (PV)
+                        <br />
+                        Hub gfgz | P.iva 02836030185
+                    </div>
                 </div>
             </div>
         </section>
