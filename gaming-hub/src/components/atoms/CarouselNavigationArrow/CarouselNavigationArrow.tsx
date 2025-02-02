@@ -7,8 +7,8 @@ const CarouselNavigationArrow: React.FC<Props> = ({ isForward }) => {
         <div>
             {isForward ? (
                 <button
-                    style={{ width: "5%" }}
-                    className="carousel-control-prev"
+                    style={{ width: "10%" }}
+                    className="carousel-control-prev mx-3"
                     type="button"
                     data-bs-target="#carouselControls"
                     data-bs-slide="prev"
@@ -21,8 +21,8 @@ const CarouselNavigationArrow: React.FC<Props> = ({ isForward }) => {
                 </button>
             ) : (
                 <button
-                    style={{ width: "5%" }}
-                    className="carousel-control-next"
+                    style={{ width: "10%" }}
+                    className="carousel-control-next mx-3"
                     type="button"
                     data-bs-target="#carouselControls"
                     data-bs-slide="next"

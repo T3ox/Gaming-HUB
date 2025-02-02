@@ -18,7 +18,9 @@ const NewestOffer: React.FC<Hamburger> = ({
                 </div>
                 <div className="col-md-7 col-lg-6 offer-container" id="text">
                     <div className="offer-description d-flex justify-content-center align-items-center flex-column text-wrap ">
-                        <span className="offer-description_name">{name}</span>
+                        <span className="offer-description_name">
+                            {name.toUpperCase()}
+                        </span>
                         <span className="offer-description_ingredients mb-3">
                             {description}
                         </span>

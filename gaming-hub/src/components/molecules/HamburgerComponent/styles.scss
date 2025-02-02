@@ -5,7 +5,7 @@ $item-xxl: 300px;
 $item-xl: 330px;
 $item-l: 290px;
 $item-md: 280px;
-$item-sm: 180px;
+$item-sm: 170px;
 //$item-sm: 47vw;
 
 .panino-container {
@@ -172,8 +172,7 @@ $item-sm: 180px;
 
         //padding per dispositivi iOS
         @supports (-webkit-touch-callout: none) and (not (pointer: fine)) {
-            padding-bottom: 1rem; 
+            padding-bottom: 1.3rem;
         }
-
     }
 }

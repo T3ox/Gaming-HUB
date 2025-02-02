@@ -26,7 +26,7 @@
         position: relative;
         overflow: hidden;
         height: 80%;
-        width: 90%;
+        width: 80%;
         transition: transform 0.5s ease-in-out;
     }
 }
@@ -34,5 +34,11 @@
 @media (max-width: $md) {
     .banner {
         height: 60svh;
+    }
+}
+
+@media (max-width: $sm) {
+    .banner {
+        height: 55svh;
     }
 }

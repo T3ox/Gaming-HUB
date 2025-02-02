@@ -34,22 +34,9 @@ export const newOffers: Hamburger[] = [
         img: require("../../images/Offers/vegan_burger.png") as string,
     },
     {
-        prices: {
-            "100g": "9,50€",
-            "200g": "11,00€",
-            "300g": "13,50€",
-        },
-        name: "KebHub Burger",
-        description:
-            "Carne bovina piemontese, finocchi marinati in aceto balsamico e pepe, " +
-            "anelli di cipolla, salsa piccantina, salsa yogurt, pomodoro e insalata gentile",
-        img: require("../../images/Offers/kebhub.png") as string,
-    },
-    {
         name: "Spicy Bot",
         description:
-            "Uno dei nostri must in versione piccantina: suprema di pollo croccante, " +
-            "scamorza affumicata in legno di faggio, cipolla caramellata, spianata " +
+            "Suprema di pollo croccante, scamorza affumicata, cipolla caramellata, spianata " +
             "calabra piccante, crocchette di patate schiacciate, salsa bbq, " +
             "maionese al prezzemolo e salsa piccantina.",
         prices: {
