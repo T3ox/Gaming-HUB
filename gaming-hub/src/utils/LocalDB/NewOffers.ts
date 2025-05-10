@@ -2,6 +2,17 @@ import Hamburger from "../Props";
 
 export const newOffers: Hamburger[] = [
     {
+        name: "Fuorisensia 2025",
+        description:
+            "Carne bovina Piemontese, squacquerone, ovetto in purgatorio con origano profumato, radicchio",
+        prices: {
+            "100g": "11,00€",
+            "200g": "12,00€",
+            "300g": "14,50€",
+        },
+        img: require("../../images/Offers/fuoriSensia.png") as string,
+    },
+    {
         name: "Season 5",
         description:
             "Carne bovina piemontese, salsa di pomodoro della nonna, friarielli alla napoletana e mozzarella di bufala campana DOP",
@@ -44,16 +55,5 @@ export const newOffers: Hamburger[] = [
             doppio: "12,00€",
         },
         img: require("../../images/Offers/spicy-bot.png") as string,
-    },
-    {
-        name: "Fuorisensia 2025",
-        description:
-            "Carne bovina Piemontese, squacquerone, ovetto in purgatorio con origano profumato, radicchio",
-        prices: {
-            "100g": "11,00€",
-            "200g": "12,00€",
-            "300g": "14,50€",
-        },
-        img: require("../../images/Offers/fuoriSensia.png") as string,
     },
 ];
