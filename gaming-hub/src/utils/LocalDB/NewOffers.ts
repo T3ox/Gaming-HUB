@@ -46,14 +46,14 @@ export const newOffers: Hamburger[] = [
         img: require("../../images/Offers/spicy-bot.png") as string,
     },
     {
-        name: "Season 4",
+        name: "Fuorisensia 2025",
         description:
-            "Carne bovina Piemontese, tomino, ovetto all'occhio di bue, pancetta croccante, salsa boscaiola, rucola",
+            "Carne bovina Piemontese, squacquerone, ovetto in purgatorio con origano profumato, radicchio",
         prices: {
-            "100g": "13,00€",
-            "200g": "14,50€",
-            "300g": "17,00€",
+            "100g": "11,00€",
+            "200g": "12,00€",
+            "300g": "14,50€",
         },
-        img: require("../../images/Offers/season4.png") as string,
+        img: require("../../images/Offers/fuoriSensia.png") as string,
     },
 ];

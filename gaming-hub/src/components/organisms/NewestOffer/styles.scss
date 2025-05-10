@@ -39,7 +39,7 @@ $fs-small: 2.2rem;*/
 
                     .offer-description_name {
                         font-weight: bold;
-                        font-size: calc($fs-default * 2.2);
+                        font-size: calc($fs-default * 1.75);
                         text-transform: capitalize !important;
                     }
 
@@ -84,7 +84,7 @@ $fs-small: 2.2rem;*/
         .row {
             .offer-description {
                 .offer-description_name {
-                    font-size: calc($fs-xlarge * 3) !important;
+                    font-size: calc($fs-xlarge * 2.5) !important;
                 }
 
                 .offer-description_ingredients {
