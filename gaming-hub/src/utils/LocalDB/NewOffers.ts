@@ -6,7 +6,7 @@ export const newOffers: Hamburger[] = [
         description:
             "Carne bovina Piemontese, squacquerone, ovetto in purgatorio con origano profumato, radicchio",
         prices: {
-            "100g": "11,00€",
+            "100g": "10,50€",
             "200g": "12,00€",
             "300g": "14,50€",
         },
