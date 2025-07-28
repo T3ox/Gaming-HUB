@@ -1,17 +1,7 @@
 import Hamburger from "../Props";
 
 export const newOffers: Hamburger[] = [
-    {
-        name: "Fuorisensia 2025",
-        description:
-            "Carne bovina Piemontese, squacquerone, ovetto in purgatorio con origano profumato, radicchio",
-        prices: {
-            "100g": "10,50€",
-            "200g": "12,00€",
-            "300g": "14,50€",
-        },
-        img: require("../../images/Offers/fuoriSensia.png") as string,
-    },
+
     {
         name: "Season 5",
         description:
@@ -24,36 +14,13 @@ export const newOffers: Hamburger[] = [
         img: require("../../images/Offers/season5.png") as string,
     },
     {
-        name: "HUBSMASH",
+        name: "tartHUB",
         description:
-            "Il classico Cheeseburger ma Smashed (con cheddar, cetriolino, pancetta croccantissima e ketchup)",
+            "Tartar di Fassona Piemontese condita con senape, scaglie di Grana Padano D.O.P, rucola, " +
+            "salsa delicata all’aglio nero",
         prices: {
-            "100g": "8,50€",
-            "200g": "10,00€",
-            "300g": "12,50€",
+            "150g": "13,00€",
         },
-        img: require("../../images/Offers/smash.png") as string,
-    },
-    {
-        name: "VEGAN BURGER",
-        description:
-            "Burger Vegano di soia e frumento, pesto di basilico 100% vegetale, finocchi marinati all'aceto " +
-            "balsamico, pomodori confit e spinacino",
-        prices: {
-            singolo: "13,50€",
-        },
-        img: require("../../images/Offers/vegan_burger.png") as string,
-    },
-    {
-        name: "Spicy Bot",
-        description:
-            "Suprema di pollo croccante, scamorza affumicata, cipolla caramellata, spianata " +
-            "calabra piccante, crocchette di patate schiacciate, salsa bbq, " +
-            "maionese al prezzemolo e salsa piccantina.",
-        prices: {
-            singolo: "9,50€",
-            doppio: "12,00€",
-        },
-        img: require("../../images/Offers/spicy-bot.png") as string,
+        img: require("../../images/Offers/tartHUB.png") as string,
     },
 ];
