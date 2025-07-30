@@ -116,9 +116,9 @@ export const menu: Hamburger[] = [
             "Carne bovina Piemontese, frittatina, pancetta affumicata, cipolla rossa caramellata, scaglie di grana padano, pomodoro ramato, insalata gentile, salsa smokey Hub",
         img: require("../../images/hamburger hub/Clutch.png") as string,
         prices: {
-            "100g": "9,50€",
-            "200g": "11,00€",
-            "300g": "13,50€",
+            "100g": "11,00€",
+            "200g": "12,50€",
+            "300g": "15,00€",
         },
     },
     {
