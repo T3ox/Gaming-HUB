@@ -1,26 +1,15 @@
 import Hamburger from "../Props";
 
 export const newOffers: Hamburger[] = [
-
     {
-        name: "Season 5",
+        name: "Season 6",
         description:
-            "Carne bovina piemontese, salsa di pomodoro della nonna, friarielli alla napoletana e mozzarella di bufala campana DOP",
+            "Carne bovina Piemontese, pesto di rucola e noci, Brie bretone, speck Alto Adige IGP, salsa dolcepiccante ai fichi, crumble di noci",
         prices: {
-            "100g": "14,00€",
-            "200g": "15,50€",
-            "300g": "18,00€",
+            "100g": "14,50€",
+            "200g": "16,00€",
+            "300g": "18,50€",
         },
-        img: require("../../images/Offers/season5.png") as string,
-    },
-    {
-        name: "tartHUB",
-        description:
-            "Tartar di Fassona Piemontese condita con senape, scaglie di Grana Padano D.O.P, rucola, " +
-            "salsa delicata all’aglio nero",
-        prices: {
-            "150g": "13,00€",
-        },
-        img: require("../../images/Offers/tartHUB.png") as string,
+        img: require("../../images/Offers/season6.png") as string,
     },
 ];
