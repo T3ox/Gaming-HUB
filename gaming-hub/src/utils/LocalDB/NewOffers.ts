@@ -2,15 +2,15 @@ import Hamburger from "../Props";
 
 export const newOffers: Hamburger[] = [
     {
-        name: "Scary Burger",
+        name: "Critical burger",
         description:
-            "Carne bovina piemontese, salsa al curry, doppio Cheddar, cipolla caramellata, pancetta croccante, insalata gentile, pomodoro ramato.",
+            "Carne bovina piemontese, crema al Gorgonzola DOP, pera Kaiser piastrata, glassa all'aceto balsamico, cavolo cappuccio marinato.",
         prices: {
-            "100g": "12,00€",
-            "200g": "13,50€",
-            "300g": "16,00€",
+            "100g": "11,50€",
+            "200g": "13,00€",
+            "300g": "15,50€",
         },
-        img: require("../../images/Offers/scaryBurger.png") as string,
+        img: require("../../images/Offers/criticalBurger.png") as string,
     },
     {
         name: "Season 6",
